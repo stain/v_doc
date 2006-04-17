@@ -1,0 +1,81 @@
+<?xml version='1.0'?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3b2/docbookx.dtd">
+<book>
+
+  <bookinfo>
+
+    <copyright><year>2006</year><holder>netlabs.org</holder></copyright>
+    <title>
+
+      The Design of Voyager
+      <author><firstname>Adrian</firstname><surname>Gschwend</surname></author>
+
+    </title>
+
+  </bookinfo>
+
+  <preface>
+
+    <title>Foreword</title>
+
+    <para>For years a book called The Design of OS/2 was recommended by 
+    programmers as a reference for everyone who wants to write an 
+    operating system. The book gave an insight into the design of a 
+    modern operating system at the time but was still easy to read also 
+    for not that experienced programmers.</para>
+
+    <para>This document tries to provide the same for The Voyager 
+    Projects, an attempt to create an object oriented workplace for the 
+    21th century. The ultimate goal is to make it easy for new 
+    programmers to join the project. This book will give you a starting 
+    point for that</para>
+
+  </preface>
+
+  <preface />
+
+  <chapter>...</chapter>
+
+  <chapter>...</chapter>
+
+  <chapter>...</chapter>
+
+  <appendix>...</appendix>
+
+  <appendix>...</appendix>
+
+  <index>...</index>
+  <bibliography xmlns="http://docbook.org/ns/docbook">
+
+    <title>References</title>
+
+    <bibliodiv>
+
+      <title>Books</title>
+
+      <biblioentry>
+
+        <abbrev>AhoSethiUllman96</abbrev>
+        <authorgroup>
+
+          <author><personname><firstname>Mike.</firstname><surname>Kogan</surname></personname></author>
+
+          <author><personname><firstname>Ravi</firstname><surname>Sethi</surname></personname></author>
+
+        </authorgroup>
+
+        <copyright><year>1996</year><holder>Bell Telephone 
+        Laboratories, Inc.</holder></copyright>
+        <biblioid class="isbn">0-201-10088-6</biblioid>
+        <publisher><publishername>Addison-Wesley Publishing
+        Company</publishername></publisher>
+        <title>The Design of OS/2</title>
+
+      </biblioentry>
+
+    </bibliodiv>
+
+  </bibliography>
+
+</book>
+
