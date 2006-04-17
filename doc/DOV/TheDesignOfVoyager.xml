@@ -34,15 +34,32 @@
 
   <preface />
 
-  <chapter>...</chapter>
+  <chapter>
 
-  <chapter>...</chapter>
+    <title>Voyager Components</title>
+		<para>bla</para>
 
-  <chapter>...</chapter>
+  </chapter>
 
-  <appendix>...</appendix>
+  <chapter>
 
-  <appendix>...</appendix>
+    <title>Voyager Object Model</title>
+		<para>bla</para>
+
+  </chapter>
+
+  <chapter>
+
+    <title>Titan</title>
+		<para>bla</para>
+
+  </chapter>
+
+  <appendix>
+
+    <title>A</title>
+
+  </appendix>
 
   <index>...</index>
   <bibliography xmlns="http://docbook.org/ns/docbook">
@@ -67,7 +84,7 @@
         <copyright><year>1996</year><holder>Bell Telephone 
         Laboratories, Inc.</holder></copyright>
         <biblioid class="isbn">0-201-10088-6</biblioid>
-        <publisher><publishername>Addison-Wesley Publishing
+        <publisher><publishername>Addison-Wesley Publishing 
         Company</publishername></publisher>
         <title>The Design of OS/2</title>
 
