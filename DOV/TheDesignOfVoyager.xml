@@ -25,10 +25,10 @@
     for not that experienced programmers.</para>
 
     <para>This document tries to provide the same for The Voyager 
-    Projects, an attempt to create an object oriented workplace for the 
+    Project, an attempt to create an object oriented workplace for the 
     21th century. The ultimate goal is to make it easy for new 
     programmers to join the project. This book will give you a starting 
-    point for that</para>
+    point for that.</para>
 
   </preface>
 
@@ -37,21 +37,24 @@
   <chapter>
 
     <title>Voyager Components</title>
-		<para>bla</para>
+
+    <para>bla</para>
 
   </chapter>
 
   <chapter>
 
     <title>Voyager Object Model</title>
-		<para>bla</para>
+
+    <para>bla</para>
 
   </chapter>
 
   <chapter>
 
     <title>Titan</title>
-		<para>bla</para>
+
+    <para>bla</para>
 
   </chapter>
 
@@ -72,20 +75,19 @@
 
       <biblioentry>
 
-        <abbrev>AhoSethiUllman96</abbrev>
+        <abbrev>Kogan92</abbrev>
         <authorgroup>
 
-          <author><personname><firstname>Mike.</firstname><surname>Kogan</surname></personname></author>
+          <author><personname><firstname>Mike</firstname><surname>Kogan</surname></personname></author>
 
-          <author><personname><firstname>Ravi</firstname><surname>Sethi</surname></personname></author>
+          <author><personname><firstname>Harvey 
+          M.</firstname><surname>Deitel</surname></personname></author>
 
         </authorgroup>
 
-        <copyright><year>1996</year><holder>Bell Telephone 
-        Laboratories, Inc.</holder></copyright>
-        <biblioid class="isbn">0-201-10088-6</biblioid>
-        <publisher><publishername>Addison-Wesley Publishing 
-        Company</publishername></publisher>
+        <copyright><year>1992</year></copyright>
+        <biblioid class="isbn">0201548895</biblioid>
+        <publisher><publishername>Addison-Wesley</publishername></publisher>
         <title>The Design of OS/2</title>
 
       </biblioentry>
