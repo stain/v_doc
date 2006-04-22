@@ -1,79 +1,53 @@
 <?xml version='1.0'?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3b2/docbookx.dtd">
-<book>
+[
+<!ENTITY % vers   SYSTEM "version.xml">
+%vers;
+<!ENTITY foreword SYSTEM "foreword.xml">
+<!ENTITY ch00     SYSTEM "ch00.xml">
+<!ENTITY ch01     SYSTEM "ch01.xml">
+<!ENTITY ch02     SYSTEM "ch02.xml">
+<!ENTITY ch03     SYSTEM "ch03.xml">
+<!ENTITY ch04     SYSTEM "ch04.xml">
+<!ENTITY appa     SYSTEM "appa.xml">
+<!ENTITY license  SYSTEM "copyright.xml">
+]>
+
+<book id="dov">
+	<title>The Design of Voyager</title>
 
   <bookinfo>
-
-    <copyright><year>2006</year><holder>netlabs.org</holder></copyright>
-    <title>
-
-      The Design of Voyager
-      <author><firstname>Adrian</firstname><surname>Gschwend</surname></author>
-
-    </title>
+	<edition>First</edition>
+    <copyright>
+		<year>2006</year>
+		<holder>netlabs.org</holder>
+	</copyright>
+	  
+	  <authorgroup>
+		  <author><firstname>Adrian</firstname><surname>Gschwend</surname></author>		  
+	  </authorgroup>
+	  
+    <legalnotice><para>This work is licensed under the Creative
+      Commons Attribution License.  To view a copy of this license,
+      visit <ulink url="http://creativecommons.org/licenses/by/2.0/"/>
+      or send a letter to Creative Commons, 559 Nathan Abbott Way,
+      Stanford, California 94305, USA.</para></legalnotice>	  
+	  
 
   </bookinfo>
+	
+  <!-- External entity refs -->
 
-  <preface>
+  &foreword;
+  &ch00;
+  &ch01;
+  &ch02;
+  &ch03;
+  &ch04;
+  &appa;
+  &license;
+	
 
-    <title>Foreword</title>
-
-    <para>For years a book called The Design of OS/2 was recommended by 
-    programmers as a reference for everyone who wants to write an 
-    operating system. The book gave an insight into the design of a 
-    modern operating system at the time but was still easy to read also 
-    for not that experienced programmers.</para>
-
-    <para>This document tries to provide the same for The Voyager 
-    Project, an attempt to create an object oriented workplace for the 
-    21th century. The ultimate goal is to make it easy for new 
-    programmers to join the project. This book will give you a starting 
-    point for that.</para>
-
-  </preface>
-
-  <preface />
-
-  <chapter>
-
-    <title>Voyager Components</title>
-
-    <para>bla</para>
-
-  </chapter>
-
-  <chapter>
-
-    <title>Voyager Object Model</title>
-
-    <para>bla</para>
-
-  </chapter>
-
-  <chapter>
-
-    <title>Triton</title>
-
-    <para>bla</para>
-
-  </chapter>
-
-  <chapter>
-
-    <title>Voyager Toolkit</title>
-
-    <para>Header with data types for OS/2, information about glib 
-    etc</para>
-
-  </chapter>
-
-  <appendix>
-
-    <title>A</title>
-
-  </appendix>
-
-  <index>...</index>
   <bibliography xmlns="http://docbook.org/ns/docbook">
 
     <title>References</title>
