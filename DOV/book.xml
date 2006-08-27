@@ -1,0 +1,94 @@
+<?xml version='1.0'?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD Simplified DocBook XML V1.0//EN" "http://www.oasis-open.org/docbook/xml/simple/1.0/sdocbook.dtd"
+[
+<!ENTITY foreword SYSTEM "foreword.xml">
+<!ENTITY ch00     SYSTEM "ch00.xml">
+<!ENTITY ch01     SYSTEM "ch01.xml">
+<!ENTITY ch02     SYSTEM "ch02.xml">
+<!ENTITY ch03     SYSTEM "ch03.xml">
+<!ENTITY ch04     SYSTEM "ch04.xml">
+<!ENTITY ch05     SYSTEM "ch05.xml">
+<!ENTITY appa     SYSTEM "appa.xml">
+]>
+
+<book id="dov">
+	<title>The Design of Voyager</title>
+	
+	<bookinfo>
+		<edition>First</edition>
+		<copyright>
+			<year>2006</year>
+			<holder>netlabs.org</holder>
+		</copyright>
+		
+		<authorgroup> <author>
+			<firstname>Adrian</firstname>
+			<surname>Gschwend</surname></author>
+		</authorgroup>
+		
+		<legalnotice>
+			<para>This work is licensed under the Creative Commons Attribution License. To
+				view a copy of this license, visit <ulink
+					url="http://creativecommons.org/licenses/by/2.0/"/> or send a
+				letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California
+				94305, USA.</para>
+		</legalnotice>
+		
+	</bookinfo>
+	
+	<!-- External entity refs -->
+	
+	&foreword;
+	&ch00;
+	&ch01;
+	&ch02;
+	&ch03;
+	&ch04;
+	&appa;
+	
+	<bibliography xmlns="http://docbook.org/ns/docbook">
+		
+		<title>References</title>
+		
+		<bibliodiv>
+			
+			<title>Books</title>
+			
+			<biblioentry>
+				
+				<abbrev>Kogan92</abbrev>
+				<authorgroup>
+					
+					<author>
+						<personname>
+							<firstname>Mike</firstname>
+							<surname>Kogan</surname>
+						</personname>
+					</author>
+					
+					<author>
+						<personname>
+							<firstname>Harvey M.</firstname>
+							<surname>Deitel</surname>
+						</personname>
+					</author>
+					
+				</authorgroup>
+				
+				<copyright>
+					<year>1992</year>
+				</copyright>
+				<biblioid class="isbn">0201548895</biblioid>
+				<publisher>
+					<publishername>Addison-Wesley</publishername>
+				</publisher>
+				<title>The Design of OS/2</title>
+				
+			</biblioentry>
+			
+		</bibliodiv>
+		
+	</bibliography>
+	
+</book>
+
