@@ -1,7 +1,96 @@
-  <chapter>
+<?xml version='1.0'?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD Simplified DocBook XML V1.0//EN" "http://www.oasis-open.org/docbook/xml/simple/1.0/sdocbook.dtd">
+<chapter>
 
-    <title>Voyager Components</title>
+  <title>Motivation</title>
 
-    <para>bla</para>
+  <section>
 
-  </chapter>
+    <title>The Story so far</title>
+
+    <para>So far most attempts to <quote>save</quote> OS/2 were to come 
+    up with a group of people which started working on a kernel that 
+    has an OS/2 like API (<filename>DOS*</filename>, <filename>
+    MOU*</filename>, <filename>VIO*</filename>, <filename>
+    KBD*</filename>, ...). There are some fundamential missconcepts in 
+    this thinking:</para>
+
+    <itemizedlist>
+
+      <listitem>
+
+        <para>No user works with the kernel itself. The kernel is just 
+        there to provide abstractions to the hardware. Users work with 
+        applications and OS/2 users work a lot with the desktop as well 
+        (The <firstterm>WPS</firstterm>).</para>
+
+      </listitem>
+
+      <listitem>
+
+        <para>The OS/2 Kernel was ahead of its time in the early 90ies 
+        but meanwhile even Microsoft did their job and made the Windows 
+        kernel much more stable than it used to be. There are some 
+        things that are still great in the OS/2 kernel like a stable 
+        API, a working ABI and clearly separated parts which do not 
+        mess with each other. The OS/2 kernel is history nowadays, as 
+        porting to new hardware like 64bit processors is impossible to 
+        do.</para>
+
+      </listitem>
+
+      <listitem>
+
+        <para>Even if the OS/2 API was stable and great one day noone 
+        will code like this anymore nowadays. PM programming will scare 
+        away every student that grew up with Java or another high-level 
+        language like C++ and (RAD) toolkits like wxWidgets, qt and 
+        GTK2. The OS/2 PM API is definitely dead and a big 
+        <emphasis>don&apos;t</emphasis> for the future. There are 
+        enough alternatives which can provide what OS/2 programmers 
+        were used to work with (GPI/GDI for example).</para>
+
+      </listitem>
+
+      <listitem>
+
+        <para>The OS/2 community lost way too much time in porting 
+        drivers and software. Instead of focusing on real stuff like 
+        WPS integration most time spent on projects is stupid and 
+        boring porting work. This did not bring us further at all, just 
+        a few things were done the OS/2 way (like CDRecord).</para>
+
+      </listitem>
+
+    </itemizedlist>
+
+  </section>
+
+  <section>
+
+    <title>Conclusion</title>
+
+    <para>There are many things in OS/2 that are worth keeping but it 
+    wouldn&apos;t make sense to clone the current OS as a whole. The 
+    community could never do that and even if we could, it 
+    wouldn&apos;t solve the problems we suffer from nowadays.</para>
+
+    <para>A project like Voyager needs to focus on its main idea, 
+    everything that distracts from that goal should be reconsidered and 
+    if possible be replaced by something existing. We will explain in 
+    detail in the next chapters which core components need to be 
+    written by ourself and which components can be taken from other 
+    projects. We believe that this approach makes it possible to make 
+    Voyager a real peace of software instead of vapoware or a nice 
+    design study, as it is at the time writing.</para>
+
+  </section>
+
+  <para />
+
+  <para />
+
+  <para />
+
+</chapter>
+
