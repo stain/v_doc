@@ -1,7 +1,63 @@
-  <chapter>
+<?xml version='1.0'?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD Simplified DocBook XML V1.0//EN" "http://www.oasis-open.org/docbook/xml/simple/1.0/sdocbook.dtd">
+<chapter>
+
+  <title>An Overview of Voyager</title>
+
+  <para>Basically a translation of the freeX Article.</para>
+
+  <section>
+
+    <title>The Voyager Project</title>
+
+    <para>Main overview</para>
+
+    <section>
+
+      <title>About the Codename</title>
+
+      <para><quote>The Voyager Project</quote> so far is just a 
+      codename.</para>
+
+    </section>
+
+  </section>
+
+  <section>
 
     <title>Voyager Object Model</title>
 
-    <para>bla</para>
+    <para>blabla</para>
 
-  </chapter>
+  </section>
+
+  <section>
+
+    <title>Neptune</title>
+
+    <para>blabla</para>
+
+  </section>
+
+  <section>
+
+    <title>Kernel</title>
+
+    <para>blabla</para>
+
+  </section>
+
+  <section>
+
+    <title>License</title>
+
+    <para>blabla</para>
+
+    <para />
+
+  </section>
+
+  <para />
+
+</chapter>
+

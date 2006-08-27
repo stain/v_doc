@@ -1,7 +1,10 @@
-  <chapter>
+<?xml version='1.0'?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD Simplified DocBook XML V1.0//EN" "http://www.oasis-open.org/docbook/xml/simple/1.0/sdocbook.dtd">
+<chapter>
 
-    <title>Triton</title>
+  <title>Voyager Object Model</title>
 
-    <para>bla</para>
+  <para>Copy the stuff from Cinc</para>
 
-  </chapter>
+</chapter>
+
