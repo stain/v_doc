@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3b2/docbookx.dtd">
-<chapter>
+<chapter id="dov.overview">
 
   <title>A Short Overview of Voyager</title>
 
@@ -8,7 +8,7 @@
   will not go into many technical details because those are covered in 
   the corresponding chapters.</para>
 
-  <section>
+  <section id="dov.overview.tvp">
 
     <title>The Voyager Project</title>
 
@@ -17,7 +17,7 @@
     of ideas we had the past years so we would like to explain how we 
     got there.</para>
 
-    <section>
+    <section id="dov.overview.tvp.h">
 
       <title>History</title>
 
@@ -26,8 +26,8 @@
       architecture and thus make it more portable. They started to 
       implement an OS/2 personality on top of a Mach 3 Kernel and they 
       called the project <emphasis>OS/2 Warp (PowerPC 
-      Edition)</emphasis>. For various reasons the project got 
-      canceled later but before that happened IBM released the book 
+      Edition)</emphasis>. For various reasons the project got canceled 
+      later but before that happened IBM released the book 
       <citetitle>OS/2 Warp (PowerPC Edition) A First Look</citetitle> 
       <citation>SG24-4630</citation>, which documented the basic design 
       of it.</para>
@@ -46,8 +46,8 @@
 
         <para>A more detailed history of OS/2 is available in the 
         Internet. Michal Necasek did a very detailed overview about the 
-        different releases. It also gives some details about what IBM 
-        did wrong. <ulink url="http://FIXME"/></para>
+        different releases. URL: 
+        <ulink url="http://pages.prodigy.net/michaln/history/"/></para>
 
       </tip>
 
@@ -167,11 +167,19 @@
       public as well with OS/2 Version 3.0 so it became <trademark>OS/2 
       Warp 3</trademark>.</para>
 
-      <para>Voyager is also the name of a NASA FIXME.</para>
+      <para>Voyager is also a reference to the NASA <emphasis>Voyager 
+      1</emphasis> spacecraft (
+      <ulink url="http://en.wikipedia.org/wiki/Voyager_1"/>), an 
+      815-kilogram unmanned probe of the outer solar system and beyond, 
+      launched September 5, 1977, and is currently operational, making 
+      it NASA&apos;s longest-lasting mission. It visited Jupiter and 
+      Saturn and was the first probe to provide detailed images of the 
+      moons of these planets.</para>
 
       <para>Many programmers contributing to the project decided to 
-      pick up related names as well, like Neptune (First moon FIXME) 
-      and Triton (FIXME).</para>
+      pick up related names as well, like Neptune, the eight and 
+      outermost planet of our solar system which got visited by the 
+      Voyager 2 project and Triton, the biggest moon of Neptune.</para>
 
       <para>Most probably the name Voyager will not be used for the 
       project itself as soon as we got something ready for use.</para>
@@ -427,9 +435,10 @@
       one can still use the desktop remote like this. This is just true 
       for applications that are not using any direct rendering and 
       beside this, most users never use that feature anyway. But the 
-      current trend on Unix-like systems finally goes into the direction 
-      of using OpenGL accelerated backends and doing the whole 
-      rendering in it. This is exactly where Neptune comes in.</para>
+      current trend on Unix-like systems finally goes into the 
+      direction of using OpenGL accelerated backends and doing the 
+      whole rendering in it. This is exactly where Neptune comes 
+      in.</para>
 
       <para>Neptune will provide a window manager for both Xlib and 
       Cario, where Cairo is using the Glitz backend for OpenGL 
@@ -468,8 +477,8 @@
 
       <para>It is absolutely clear that whatever option might come up, 
       we will <emphasis>not</emphasis> write device drivers on our own 
-      again. This was and is one of the major problems we had and no one 
-      of the core developers of Voyager wants to spend time on that 
+      again. This was and is one of the major problems we had and no 
+      one of the core developers of Voyager wants to spend time on that 
       anymore.</para>
 
       <para>As you can see in <xref id="dov.kernel"/>, there are plenty 
@@ -557,7 +566,7 @@
       <listitem>
 
         <para>The core of Voyager is dual-licensed under the CDDL and 
-        the LGPL. </para>
+        the LGPL.</para>
 
       </listitem>
 
@@ -576,8 +585,8 @@
     the LGPL is the only logical way for our requirements in that case. 
     The CDDL gives more freedom to us because we as developers can also 
     sell our product like this, but if someone changes source code of 
-    us they would have to at least release the changes in our classes. 
-    </para>
+    us they would have to at least release the changes in our 
+    classes.</para>
 
     <para>The Apache License for sample applications and code templates 
     also makes sense. It should be easy for new programmers and 

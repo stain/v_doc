@@ -14,7 +14,7 @@
   who worked with it a bit more explain that it was the best thing to 
   administrate their fileservers, if they were even more skilled they 
   start telling stories about how they did interact with the desktop 
-  and you can still see a glimpse (FIXME) in their eyes if they talk 
+  and you can still see a twinkle in their eyes if they talk 
   about it. The authors of this book are still using OS/2 or its 
   official successor eComStation every day. We work on it, we write 
   software for it, we extend it. But we are realistic. We know, that 
@@ -39,7 +39,7 @@
 
     <title>Facts and Religion</title>
 
-    <para>In FIXME we explain the history of the Voyager project, 
+    <para>In <xref linkend="dov.overview.tvp.h" /> we explain the history of the Voyager project, 
     including some details about what IBM planned to do with OS/2 years 
     ago. As we all know, it came different, OS/2 never got the success 
     it deserved from a technical point of view, the world is still 
@@ -141,7 +141,7 @@
       system, especially since IBM stopped selling OS/2 in January 
       2006.</para>
 
-      <para>When eComStation 1.0 got released in FIXME IBM was still 
+      <para>When eComStation 1.0 got released in 2001 IBM was still 
       selling OS/2 but many OS/2 users switched to eComStation. The 
       reason was pretty simple: eCS included a lot of things in the 
       default installation users of OS/2 installed anyway - and much 
