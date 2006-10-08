@@ -1,5 +1,5 @@
 <?xml version='1.0'?>
-<!DOCTYPE chapter PUBLIC "-//OASIS//DTD Simplified DocBook XML V1.0//EN" "http://www.oasis-open.org/docbook/xml/simple/1.0/sdocbook.dtd"
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3b2/docbookx.dtd"
 [
 <!ENTITY foreword SYSTEM "foreword.xml">
 <!ENTITY ch00     SYSTEM "ch00.xml">
@@ -8,22 +8,40 @@
 <!ENTITY ch03     SYSTEM "ch03.xml">
 <!ENTITY ch04     SYSTEM "ch04.xml">
 <!ENTITY ch05     SYSTEM "ch05.xml">
+<!ENTITY ch06     SYSTEM "ch06.xml">
+<!ENTITY ch07     SYSTEM "ch07.xml">
+<!ENTITY ch08     SYSTEM "ch08.xml">
+<!ENTITY ch09     SYSTEM "ch09.xml">	
 <!ENTITY appa     SYSTEM "appa.xml">
+<!ENTITY appb     SYSTEM "appb.xml">
+<!ENTITY appc     SYSTEM "appc.xml">
+<!ENTITY bibl     SYSTEM "bibl.xml">
 ]>
 
 <book id="dov">
 	<title>The Design of Voyager</title>
+	<subtitle>A Desktop for the 21th Century.</subtitle>
 	
 	<bookinfo>
-		<edition>First</edition>
+		<edition>0.1, First</edition>
 		<copyright>
 			<year>2006</year>
 			<holder>netlabs.org</holder>
 		</copyright>
 		
-		<authorgroup> <author>
-			<firstname>Adrian</firstname>
-			<surname>Gschwend</surname></author>
+		<authorgroup>
+			<author>
+				<firstname>Adrian</firstname>
+				<surname>Gschwend</surname>
+			</author>
+			<author>
+				<firstname>Chris</firstname>
+				<surname>Wohlgemuth</surname>
+			</author>
+			<author>
+				<firstname>Peter</firstname>
+				<surname>Cocsis</surname>
+			</author>			
 		</authorgroup>
 		
 		<legalnotice>
@@ -44,51 +62,15 @@
 	&ch02;
 	&ch03;
 	&ch04;
+	&ch05;
+	&ch06;
+	&ch07;
+	&ch08;
+	&ch09;
 	&appa;
-	
-	<bibliography xmlns="http://docbook.org/ns/docbook">
-		
-		<title>References</title>
-		
-		<bibliodiv>
-			
-			<title>Books</title>
-			
-			<biblioentry>
-				
-				<abbrev>Kogan92</abbrev>
-				<authorgroup>
-					
-					<author>
-						<personname>
-							<firstname>Mike</firstname>
-							<surname>Kogan</surname>
-						</personname>
-					</author>
-					
-					<author>
-						<personname>
-							<firstname>Harvey M.</firstname>
-							<surname>Deitel</surname>
-						</personname>
-					</author>
-					
-				</authorgroup>
-				
-				<copyright>
-					<year>1992</year>
-				</copyright>
-				<biblioid class="isbn">0201548895</biblioid>
-				<publisher>
-					<publishername>Addison-Wesley</publishername>
-				</publisher>
-				<title>The Design of OS/2</title>
-				
-			</biblioentry>
-			
-		</bibliodiv>
-		
-	</bibliography>
+	&appb;
+	&appc;
+	&bibl;
 	
 </book>
 
