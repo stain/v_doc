@@ -1,5 +1,5 @@
 <?xml version='1.0'?>
-<!DOCTYPE preface PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3b2/docbookx.dtd">
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3b2/docbookx.dtd">
 <chapter id="dov.vom">
 
   <title>Voyager Object Model</title>
@@ -43,10 +43,10 @@
       objects in the sense that they might carry additional information 
       which is encapsulated and come with object methods to work with 
       them. For example one doesn&apos;t copy a file by using a 
-      filemanager or the desktop application and calling some 
-      <function>copy()</function> API of the operating system. Instead 
-      a method on the file object is invoked and the file object 
-      handles the copying on itself.</para>
+      filemanager or the desktop application and calling some <function>
+      copy()</function> API of the operating system. Instead a method 
+      on the file object is invoked and the file object handles the 
+      copying on itself.</para>
 
       <para>Every object is an instance of a class which is registered 
       with the desktop. Classes may be registered and de-registered at 
@@ -237,23 +237,23 @@
 
       <title>Memory Management</title>
 
-      <para>Using <function>wpAllocMem()</function> and 
-      <function>wpFreeMem()</function> allocated memory is tracked in 
-      an inuse list. Whenever an object is deleted or goes dormant this 
-      list is scanned by the system and memory still allocated will be 
-      freed automatically. Nevertheless memory not in use anymore 
-      should be freed by the programmer as usual because the desktop 
-      does not include a garbage collector. The inuse list should be 
-      considered as a kind of safety net.</para>
+      <para>Using <function>wpAllocMem()</function> and <function>
+      wpFreeMem()</function> allocated memory is tracked in an inuse 
+      list. Whenever an object is deleted or goes dormant this list is 
+      scanned by the system and memory still allocated will be freed 
+      automatically. Nevertheless memory not in use anymore should be 
+      freed by the programmer as usual because the desktop does not 
+      include a garbage collector. The inuse list should be considered 
+      as a kind of safety net.</para>
 
       <warning>
 
-        <para>While the usual memory function like 
-        <function>malloc()</function>, <function>g_alloc()</function>, 
-        <function>SOMMAlloc()</function> are available to desktop 
-        developers it is strongly adviced to only use 
-        <function>wpAllocMem()</function> and 
-        <function>wpFreeMem()</function>.</para>
+        <para>While the usual memory function like <function>
+        malloc()</function>, <function>g_alloc()</function>, <function>
+        SOMMAlloc()</function> are available to desktop developers it 
+        is strongly adviced to only use <function>
+        wpAllocMem()</function> and <function>
+        wpFreeMem()</function>.</para>
 
       </warning>
 
@@ -261,16 +261,15 @@
 
         <listitem>
 
-          <title>Memory allocation with 
-          <function>wpAllocMem()</function></title>
-
+          <bridgehead>Memory allocation with <function>
+          wpAllocMem()</function></bridgehead>
           <para>A programmer asks for memory using</para>
 
-          <funcsynopsis><funcprototype><funcdef>int 
-          <function>wpAllocMem</function></funcdef> <paramdef>WPObject 
-          <parameter>somSelf</parameter></paramdef> <paramdef>ULONG 
-          <parameter>cbBytes</parameter></paramdef> 
-          <paramdef><parameter>...</parameter></paramdef></funcprototype></funcsynopsis>
+          <funcsynopsis><funcprototype><funcdef>int <function>
+          wpAllocMem</function></funcdef><paramdef>WPObject <parameter>
+          somSelf</parameter></paramdef><paramdef>ULONG <parameter>
+          cbBytes</parameter></paramdef><paramdef>
+          <parameter>...</parameter></paramdef></funcprototype></funcsynopsis>
           <para>This method is introduced by the 
           <classname>WPObject</classname> class.</para>
 
@@ -304,8 +303,8 @@
           semaphor to serialize access to critical object instance 
           variables. The inuse list is such a critical resource so 
           <function>wpAddToObjUseList()</function> tries to aquire the 
-          objects semaphor using 
-          <function>wpRequestObjectSem()</function>.</para>
+          objects semaphor using <function>
+          wpRequestObjectSem()</function>.</para>
 
           <warning>
 
@@ -318,19 +317,18 @@
 
         <listitem>
 
-          <title>Freeing memory with 
-          <function>wpFreeMem()</function></title>
-
-          <para>Memory is freed using 
-          <synopsis>wpFreeMem()</synopsis></para>
+          <bridgehead>Freeing memory with <function>
+          wpFreeMem()</function></bridgehead>
+          <para>Memory is freed using <synopsis>
+          wpFreeMem()</synopsis></para>
 
           <para>This method introduced by 
           <classname>WPObject</classname> takes the memory pointer and 
           travels back to the USEITEM part of the allocated memory 
           block (see the section about memory allocation). Using a 
           pointer to the USEITEM the memory is removed from the objects 
-          inuse list using 
-          <function>wpDeleteFromObjUseList()</function>.</para>
+          inuse list using <function>
+          wpDeleteFromObjUseList()</function>.</para>
 
           <para>Be aware that this method tries to aquire the object 
           semaphor so a deadlock may occur when the semaphor is already 
