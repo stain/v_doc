@@ -2,13 +2,13 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3b2/docbookx.dtd">
 <chapter id="dov.vom">
 
-  <title>Voyager Object Model</title>
+  <title>Voyager Desktop</title>
 
-  <section id="dov.vom.g">
+  <section id="dov.vd.g">
 
     <title>General</title>
 
-    <section id="dov.vom.g.i">
+    <section id="dov.vd.g.i">
 
       <title>Introduction</title>
 
@@ -34,7 +34,7 @@
 
     </section>
 
-    <section id="dov.vom.g.co">
+    <section id="dov.vd.g.co">
 
       <title>Classes and Objects</title>
 
@@ -95,7 +95,7 @@
       next release may only be available at some point in the 
       future.</para>
 
-      <section id="dov.vom.g.s">
+      <section id="dov.vd.g.s">
 
         <title>Subclassing</title>
 
@@ -122,7 +122,7 @@
 
       </section>
 
-      <section id="dov.vom.g.cr">
+      <section id="dov.vd.g.cr">
 
         <title>Class Replacement</title>
 
@@ -132,7 +132,7 @@
 
     </section>
 
-    <section id="dov.vom.g.fv">
+    <section id="dov.vd.g.fv">
 
       <title>Folder Views</title>
 
@@ -200,7 +200,7 @@
 
     </section>
 
-    <section id="dov.vom.g.t">
+    <section id="dov.vd.g.t">
 
       <title>Templates</title>
 
@@ -225,7 +225,7 @@
 
   </section>
 
-  <section id="dov.vom.i">
+  <section id="dov.vd.i">
 
     <title>Implementation</title>
 
@@ -233,7 +233,7 @@
     It&apos;s a technical document intended merely for 
     developers.</para>
 
-    <section id="dov.vom.i.mm">
+    <section id="dov.vd.i.mm">
 
       <title>Memory Management</title>
 
