@@ -127,7 +127,24 @@
 
         <title>eComStation</title>
 
-        <para>Describe eCS &amp; SSI here.</para>
+        <para>eComStation 1.2R is the currently available version of 
+        this operating system. It is based on IBM personal computer 
+        operating system technology, and includes many UI enhancements, 
+        a reorganisation of the desktop to reflect today&apos;s 
+        Internet-centred computing world, additional networking 
+        technology to allow connecting to the latest broadband Internet 
+        connections such as Cable, ISDN and xDSL, and the further 
+        improved installation routine makes installing easier than ever 
+        on both cutting-edge and legacy hardware.</para>
+
+        <para>eComStation installs directly from CD on modern hardware 
+        like AMD Athlon64 based computers, large IDE and SATA 
+        harddrives and supports a host of network-, sound- and 
+        videocards out of the box</para>
+
+        <para>For more info on availability, pricing and support 
+        options please go to <ulink url="http://www.ecomstation.com/">http://www.ecomstation.com/</ulink> 
+        </para>
 
       </tip>
 
@@ -168,7 +185,7 @@
       Warp 3</trademark>.</para>
 
       <para>Voyager is also a reference to the NASA <emphasis>Voyager 
-      1</emphasis> spacecraft (
+      1</emphasis> spacecraft ( 
       <ulink url="http://en.wikipedia.org/wiki/Voyager_1"/>), an 
       815-kilogram unmanned probe of the outer solar system and beyond, 
       launched September 5, 1977, and is currently operational, making 

@@ -8,23 +8,23 @@
   our desktop, they usually ask what kind of Linux you are running. If 
   you explain them that this has nothing to do with Linux and that the 
   original system was done by IBM and they called it OS/2, we either 
-  end up with a big question mark on their face or with a statement like 
-  <quote>Oh, I used to work with that as well, it was good but I 
+  end up with a big question mark on their face or with a statement 
+  like <quote>Oh, I used to work with that as well, it was good but I 
   didn&apos;t had any software/drivers/whatever for it</quote>. People 
   who worked with it a bit more explain that it was the best thing to 
   administrate their fileservers, if they were even more skilled they 
   start telling stories about how they did interact with the desktop 
-  and you can still see a twinkle in their eyes if they talk 
-  about it. The authors of this book are still using OS/2 or its 
-  official successor eComStation every day. We work on it, we write 
-  software for it, we extend it. But we are realistic. We know, that 
-  one day there will not be any more hardware to run it on, at least 
-  not in native mode. We know, that we have to invest already nowadays 
-  a lot of time, money and energy to get things like ACPI done, and to 
-  port de-facto standards like OpenOffice and the Mozilla suite to it. 
-  We also know, that we will never get the source code of the system by 
-  IBM, the thing we would need desperately to fix some very annoying 
-  bugs and limitations in it.</para>
+  and you can still see a twinkle in their eyes if they talk about it. 
+  The authors of this book are still using OS/2 or its official 
+  successor eComStation every day. We work on it, we write software for 
+  it, we extend it. But we are realistic. We know, that one day there 
+  will not be any more hardware to run it on, at least not in native 
+  mode. We know, that we have to invest already nowadays a lot of time, 
+  money and energy to get things like ACPI done, and to port de-facto 
+  standards like OpenOffice and the Mozilla suite to it. We also know, 
+  that we will never get the source code of the system by IBM, the 
+  thing we would need desperately to fix some very annoying bugs and 
+  limitations in it.</para>
 
   <para>So we have to think about the options we have. Some of us did 
   that the past years and some of us came up with more or less detailed 
@@ -39,11 +39,12 @@
 
     <title>Facts and Religion</title>
 
-    <para>In <xref linkend="dov.overview.tvp.h" /> we explain the history of the Voyager project, 
-    including some details about what IBM planned to do with OS/2 years 
-    ago. As we all know, it came different, OS/2 never got the success 
-    it deserved from a technical point of view, the world is still 
-    dominated by Microsoft and Windows.</para>
+    <para>In <xref linkend="dov.overview.tvp.h"/> we explain the 
+    history of the Voyager project, including some details about what 
+    IBM planned to do with OS/2 years ago. As we all know, it came 
+    different, OS/2 never got the success it deserved from a technical 
+    point of view, the world is still dominated by Microsoft and 
+    Windows.</para>
 
     <para>After the first presentation of Voyager to the public at 
     Warpstock Europe 2006 we got a lot of feedback about the idea, both 
@@ -114,7 +115,16 @@
 
         <title>netlabs.org</title>
 
-        <para>Describe netlabs.org here.</para>
+        <para>netlabs.org was founded in 1997 with the goal of creating 
+        a center for free Open Source Software for OS/2 and also 
+        eComStation (eCS). Today netlabs.org is one of the largest 
+        developers of OS/2 software outside of IBM itself.</para>
+
+        <para>With its many ground-breaking projects, netlabs.org has 
+        won a name for itself in the great OS/2 and eCS Community. More 
+        information and projects can be found at 
+        <ulink url="http://www.netlabs.org/">
+        http://www.netlabs.org/</ulink>.</para>
 
       </tip>
 
@@ -194,7 +204,17 @@
 
         <title>Workplace Shell (WPS)</title>
 
-        <para>Describe the WPS here.</para>
+        <para>The Workplace Shell (WPS) is an award-winning 
+        object-oriented desktop shell produced by IBM&apos;s Boca Raton 
+        development lab for OS/2 2.0. It is based on Common User Access 
+        and made a radical shift away from the Program Manager type 
+        interface that earlier versions of OS/2 shared with Windows 3.x 
+        or the application-oriented WIMP interface of the Apple 
+        Macintosh. The Workplace Shell was also used in OS/2 Warp 3 and 
+        Warp 4 (now abandoned by IBM), and is still the user interface 
+        of the revamped successor to OS/2 called eComStation. Source: 
+        <ulink url="http://en.wikipedia.org/wiki/Workplace_Shell"/>
+        </para>
 
       </tip>
 
