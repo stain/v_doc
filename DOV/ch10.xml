@@ -33,9 +33,9 @@
     <para>It is not just coding that needs help from developers, right 
     now there are many open questions and maybe you have a lot of know 
     how about kernel design. So you could for example contribute to the 
-    kernel chapter in this book to make sure, we get more details in 
-    there. It is up to you, feel free to contact us on any of the ways 
-    mentioned here.</para>
+    kernel chapter in this book to make sure that we get more details 
+    in there. It is up to you, feel free to contact us on any of the 
+    ways mentioned here.</para>
 
     <para>Please introduce yourself quickly when you join IRC or the 
     mailing-list. Don&apos;t give up if no one gives an answer right 
@@ -66,9 +66,9 @@
       a confirmation email shortly afterwards.</para>
 
       <para>If you do not like mailing-lists you can use a web/news 
-      (nntp) interace as well. This is provided by gmane.org, a mail to 
-      news and vice versa gateway. The Voyager mailinglist can be found 
-      here: <ulink url="http://dir.gmane.org/"/></para>
+      (nntp) interace as well. This is provided by gmane.org, a 
+      mail-to-news and vice versa gateway. The Voyager mailinglist can 
+      be found here: <ulink url="http://dir.gmane.org/"/></para>
 
     </section>
 
@@ -82,7 +82,7 @@
       <ulink url="http://svn.netlabs.org/voyager"/>.</para>
 
       <para>Please check this page as well for instructions about 
-      Subversion. There structure of the Voyager repoistory is a bit 
+      Subversion. The structure of the Voyager repository is a bit 
       complex, the most recent information about how to get it can be 
       found in TRAC as well.</para>
 
@@ -94,21 +94,21 @@
 
     <title>Users</title>
 
-    <para>Users can contribute as well to Voyager right now. While 
+    <para>Users can contribute to Voyager right now as well. While 
     there is nothing to test yet and probably won&apos;t be for the 
     next months, it is important that people know Voyager right from 
     the beginning. As mentioned in this book, there seems to be a big 
     confusion among users about what Voyager is, or will be. Also, many 
     people think that netlabs.org will now stop developing for eCS and 
-    OS/2. Again, this is absolutely not the case and you can help us, 
-    if you talk to users about that and explain the idea of Voyager. 
-    The worst thing that could happen is when the already small OS/2 
-    and eCS community splits up into two parts. So help us doing 
+    OS/2. Again, this is absolutely not the case and you can help us if 
+    you talk to users about that and explain the idea of Voyager. The 
+    worst thing that could happen would be when the already small OS/2 
+    and eCS community splitted up into two parts. So help us doing 
     Voyager advocacy but also listen to the arguments and fears of 
     people who do not understand or like the idea of Voyager yet. It is 
     important that we take them seriously and try to show them that 
     their arguments are not valid. Even sceptical people might come up 
-    with great ideas we did not think of, if this is the case, let us 
+    with great ideas we did not think of. If this is the case, let us 
     know. See <xref linkend="dov.contrib.d"/> about how to get in touch 
     with us.</para>
 
@@ -119,10 +119,10 @@
       <listitem>
 
         <para>Present Voyager to your local usergroup, distribute this 
-        book to people and show presentations available at netlabs.org. 
-        The Developers Workshop presentation is also available as 
-        Ogg-file so you could listen to it to get some more 
-        details.</para>
+        book to people, and show presentations available at 
+        netlabs.org. The Developers Workshop presentation is also 
+        available as Ogg-file so you could listen to it to get some 
+        more details.</para>
 
       </listitem>
 
@@ -144,7 +144,7 @@
       <listitem>
 
         <para>Try to bring Voyager into the news, write articles about 
-        if if you have contacts. We need to attract more people and 
+        it if you have contacts. We need to attract more people and 
         getting news coverage might help a lot about that.</para>
 
       </listitem>
@@ -172,7 +172,7 @@
     <title>Translators</title>
 
     <para>Explain where to get the strings to translate, explain how 
-    one can get Subversion commiter for a language etc.</para>
+    one can get Subversion commiter for a language, etc.</para>
 
     <para>It is a bit too early for that, will be described as soon as 
     it is ready.</para>
@@ -184,24 +184,24 @@
     <title>Sponsoring/Fund Raising</title>
 
     <para>As you can imagine, Voyager is a very big project. So far all 
-    programmers working on Voyager do this in their spare time for 
-    free. While this works for quite some open source project it is 
-    also a fact, that almost all big successful projects do have 
-    fulltime programmers working on it. The benefit is quite obvious, 
-    there is a difference if one can work 8 hours a day, 5 days a week 
-    on a project or just a few hours a week or in best case a few hours 
+    programmers working on Voyager do this for free in their 
+    spare-time. While this works for quite some open source project, it 
+    is also a fact that almost all big successful projects do have 
+    fulltime programmers working on them. The benefit is quite obvious: 
+    There is a difference if one can workon a project 8 hours a day, 5 
+    days a week or just a few hours a week or in best case a few hours 
     a day. Projects like OpenOffice.org, Mozilla but also Gnome and KDE 
     do have fulltime programmers.</para>
 
     <para>netlabs.org already hires developers, on project or permanent 
     base. So far the development was payed with sponsoring from users 
-    and companies, if there was not enough money the founder of 
-    netlabs.org, Adrian Gschwend, payed the difference on its own. 
+    and companies, and if there was not enough money, the founder of 
+    netlabs.org, Adrian Gschwend, payed the difference on his own. 
     During the last three years Adrian Gschwend invested around 
     20&apos;000 Euro of his very own money into netlabs.org.</para>
 
     <para>While this was ok for the last three years he has to change 
-    that now. netlabs.org should get self-supporting. </para>
+    that now. netlabs.org should get self-supporting.</para>
 
   </section>
 

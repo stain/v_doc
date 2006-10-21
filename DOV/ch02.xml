@@ -26,38 +26,38 @@
       architecture and thus make it more portable. They started to 
       implement an OS/2 personality on top of a Mach 3 Kernel and they 
       called the project <emphasis>OS/2 Warp (PowerPC 
-      Edition)</emphasis>. For various reasons the project got canceled 
-      later but before that happened IBM released the book 
+      Edition)</emphasis>. For various reasons the project got 
+      cancelled later but before that happened, IBM released the book 
       <citetitle>OS/2 Warp (PowerPC Edition) A First Look</citetitle> 
       <citation>SG24-4630</citation>, which documented the basic design 
       of it.</para>
 
       <para>In 1996 IBM released the last real release of OS/2 with 
-      significant changes in it, named OS/2 Warp 4. They back-ported 
-      some of the things designed for the PowerPC version like GRADD 
+      significant changes, named OS/2 Warp 4. They back-ported some of 
+      the things designed for the PowerPC version like GRADD 
       <citation>SG24-4639</citation> to the <quote>old</quote> OS/2 
       kernel, but the microkernel project itself was dead. After Warp 4 
       IBM just released some updated releases for servers, the end-user 
-      market was at this time already dead inside IBM. The only part 
+      market was already dead inside IBM at this time. The only part 
       that still got extended was the OS/2 Kernel, development on that 
       stopped end of 2005.</para>
 
       <tip>
 
         <para>A more detailed history of OS/2 is available in the 
-        Internet. Michal Necasek did a very detailed overview about the 
+        Internet. Michal Necasek did a very detailed overview of the 
         different releases. URL: 
         <ulink url="http://pages.prodigy.net/michaln/history/"/></para>
 
       </tip>
 
       <para>For several years people in the OS/2 community were 
-      thinking about options we have in mid-term to work with our 
+      thinking about the mid-term options we had to work with our 
       beloved operating system. Most of the ideas were focusing on 
       rewriting large parts of OS/2, with the goal to have an open 
-      source clone of OS/2. Projects like OSFree started, but they did 
-      not reach much attention so far and there is not much outcome by 
-      the time writing.</para>
+      source clone of OS/2. Projects like OSFree started but they 
+      haven&apos;t reached much attention so far and there is not much 
+      outcome by the time writing.</para>
 
       <para>Bigger projects like netlabs.org never actively joined or 
       supported those projects for various reasons. Most programmers at 
@@ -66,13 +66,13 @@
       fully occupied with other projects and we did not see many new 
       people joining the community. It is also a fact that the design 
       of OS/2 in general (with some notable exceptions) is no longer 
-      state of the art. IBM addressed that back then with the 
+      state of the art. Back then, IBM addressed that with the 
       microkernel concept but as mentioned before it was neither 
       released nor finished.</para>
 
-      <para>With or without IBM, there was always a hard core of 
+      <para>With or without IBM, there always was a hard core of 
       programmers and users using and enhancing OS/2. With Warpstock 
-      USA 1996 OS/2 users started to meet each other once a year, one 
+      USA 1996 OS/2 users started to meet each other once a year, three 
       year later the European community started to do that as well, 
       followed by East-European users a few years later. At around the 
       same time netlabs.org got founded by Adrian Gschwend. The goal 
@@ -88,27 +88,27 @@
       extend the OS. The MacOS X Kernel, called Darwin, is based on a 
       Mach 3 microkernel with a FreeBSD and MacOS X personality on top 
       of it. For that reason some people at netlabs.org started to get 
-      interest in that project, because of the obvious relations to the 
-      microkernel project of IBM.</para>
+      interested in that project, because of the obvious relations to 
+      the microkernel project of IBM.</para>
 
-      <para>At Developers Workshop 2005 in Dresden Adrian Gschwend of 
-      netlabs.org presented the first thoughts about the perspective of 
-      the OS/2 community. The presentation showed that in mid-term the 
-      community has to move on because we will not be able to support 
-      OS/2 forever on recent hardware. Also, we cannot expect any more 
-      enhancements from IBM. It was also shown that there are things 
-      and concepts worth keeping in OS/2 which should be kept for the 
-      future. Inspired by Darwin, the main statement from a technical 
-      point of view was to create an OS/2 personality on top of Darwin 
-      and implement PM and WPS on top of it.</para>
+      <para>At the Developers Workshop 2005 in Dresden Adrian Gschwend 
+      of netlabs.org presented the first thoughts about the perspective 
+      of the OS/2 community. The presentation showed that, in mid-term, 
+      the community will have to move on because we will not be able to 
+      support OS/2 forever on recent hardware. Also, we cannot expect 
+      any more enhancements from IBM. It was also shown that there are 
+      things and concepts worth keeping in OS/2 which should be kept 
+      for the future. Inspired by Darwin, the main statement from a 
+      technical point of view was to create an OS/2 personality on top 
+      of Darwin and implement PM and WPS on top of it.</para>
 
       <para>The presentation showed some interesting thoughts but it 
       missed the main point: It would not solve any of the issues we 
-      have nowadays with PM or WPS because both of them are not 
-      available in source code. During summer 2005 Bart Van Leeuwen and 
-      Adrian Gschwend pushed the idea further which lead to a radical 
-      change of the focus: One has to think about the desktop first and 
-      then address the system underneath of it.</para>
+      nowadays have with PM or WPS because neither of them is available 
+      in source code. During summer 2005 Bart Van Leeuwen and Adrian 
+      Gschwend pushed the idea further which lead to a radical change 
+      of the focus: One has to think about the desktop first and then 
+      address the system underneath.</para>
 
       <para>In November 2005 the new conclusion was presented at 
       Warpstock Europe 2005. For the first time there were also 
@@ -116,12 +116,12 @@
       components of the WPS like SOM. The focus was pretty clear: Use 
       as many existing technologies as possible and implement something 
       like a WPS on top of it and make sure we just write the minimum 
-      needed to get there. There were also ideas presented about how a 
-      backward compatibility to OS/2 applications could be done. An 
-      important statement was also that the kernel does not really play 
-      an important role at the moment and that netlabs.org will most 
-      probably not focus on that until there is more work done on the 
-      desktop part.</para>
+      needed to get there. There were also ideas presented about how 
+      backward compatibility to OS/2 applications could be done. 
+      Another important statement was that the kernel did not really 
+      play an important role at that moment and that netlabs.org would 
+      most probably not focus on that until more work had been done on 
+      the desktop part.</para>
 
       <tip>
 
@@ -129,43 +129,43 @@
 
         <para>eComStation 1.2R is the currently available version of 
         this operating system. It is based on IBM personal computer 
-        operating system technology, and includes many UI enhancements, 
+        operating system technology and includes many UI enhancements, 
         a reorganisation of the desktop to reflect today&apos;s 
-        Internet-centred computing world, additional networking 
+        Internet-centered computing world, additional networking 
         technology to allow connecting to the latest broadband Internet 
-        connections such as Cable, ISDN and xDSL, and the further 
-        improved installation routine makes installing easier than ever 
-        on both cutting-edge and legacy hardware.</para>
+        connections such as Cable, ISDN, and xDSL, and the further 
+        improved installation routine makes installing on both 
+        cutting-edge and legacy hardware easier than ever.</para>
 
         <para>eComStation installs directly from CD on modern hardware 
         like AMD Athlon64 based computers, large IDE and SATA 
-        harddrives and supports a host of network-, sound- and 
-        videocards out of the box</para>
+        harddrives and supports a host of network, sound, and video 
+        cards out of the box</para>
 
         <para>For more info on availability, pricing and support 
-        options please go to <ulink url="http://www.ecomstation.com/">http://www.ecomstation.com/</ulink> 
-        </para>
+        options please go to <ulink url="http://www.ecomstation.com/">
+        http://www.ecomstation.com/</ulink></para>
 
       </tip>
 
       <para>A year after the first presentation of Voyager the next 
       Developers Workshop 2006 took place in April 2006 in Biel, 
-      Switzerland. People like Chris Wohlgemuth, Peter Kocsis and 
+      Switzerland. People like Chris Wohlgemuth, Peter Kocsis, and 
       Harald Studer presented first concepts and prototypes of core 
       components of Voyager, including an object model, a multimedia 
-      subsystem and an OpenGL based window manager. Adrian Gschwend and 
-      Bart Van Leeuwen talked about the next steps the project has to 
-      take and they also clearly showed that eComStation is the current 
-      way to go for the mid-term future. There were also students from 
-      the Berne University of Applied Sciences joining the 
-      presentations which did not know OS/2 and its concepts at all. It 
-      was great to see that those concepts are indeed unique and that 
-      most students liked the idea of Voyager a lot and talked about 
-      joining the project as soon as there are prototypes available. 
-      This is an important step for community itself!</para>
+      subsystem, and an OpenGL based window manager. Adrian Gschwend 
+      and Bart Van Leeuwen talked about the next steps the project has 
+      to take and they also clearly showed that eComStation is the 
+      current way to go for the mid-term future. There were also 
+      students from the Berne University of Applied Sciences joining 
+      the presentations who did not know OS/2 and its concepts at all. 
+      It was great to see that those concepts are indeed unique and 
+      that most students liked the idea of Voyager a lot and talked 
+      about joining the project as soon as there are prototypes 
+      available. This is an important step for community itself!</para>
 
       <para>The release of this book is hopefully the next milestone 
-      for Voyager, as you can see it is far away from being complete 
+      for Voyager. As you can see it is far away from being complete 
       but we still think it is an important next step and we look 
       forward to contributions from all over the world.</para>
 
@@ -178,9 +178,9 @@
       <para><quote>The Voyager Project</quote> so far is just a 
       codename for what we discuss in this book. It is a reference to 
       the <trademark>Star Trek</trademark> related history of codenames 
-      used by IBM in OS/2 development. The codenames were already used 
-      for a long time at IBM but the marketing department decided to 
-      use the codename <emphasis>Warp</emphasis> as a name for the 
+      used by IBM in OS/2 development. The codenames had already been 
+      used for a long time at IBM but the marketing department decided 
+      to use the codename <emphasis>Warp</emphasis> as a name for the 
       public as well with OS/2 Version 3.0 so it became <trademark>OS/2 
       Warp 3</trademark>.</para>
 
@@ -188,13 +188,13 @@
       1</emphasis> spacecraft ( 
       <ulink url="http://en.wikipedia.org/wiki/Voyager_1"/>), an 
       815-kilogram unmanned probe of the outer solar system and beyond, 
-      launched September 5, 1977, and is currently operational, making 
-      it NASA&apos;s longest-lasting mission. It visited Jupiter and 
+      launched September 5, 1977, and still operational, making it 
+      NASA&apos;s longest-lasting mission. It visited Jupiter and 
       Saturn and was the first probe to provide detailed images of the 
       moons of these planets.</para>
 
       <para>Many programmers contributing to the project decided to 
-      pick up related names as well, like Neptune, the eight and 
+      pick up related names as well, like Neptune, the eighth and 
       outermost planet of our solar system which got visited by the 
       Voyager 2 project and Triton, the biggest moon of Neptune.</para>
 
@@ -210,8 +210,8 @@
     <title>The Story So Far</title>
 
     <para>So far most attempts to <quote>save</quote> OS/2 were to come 
-    up with a group of people which started working on a kernel that 
-    has an OS/2 like API (<filename>DOS*</filename>, <filename>
+    up with a group of people who started working on a kernel that has 
+    an OS/2-like API (<filename>DOS*</filename>, <filename>
     MOU*</filename>, <filename>VIO*</filename>, <filename>
     KBD*</filename>, ...). There are some essential miss-concepts in 
     this thinking:</para>
@@ -230,22 +230,22 @@
       <listitem>
 
         <para>The OS/2 Kernel was ahead of its time in the early 90ies 
-        but meanwhile even Microsoft did their job and made the Windows 
-        kernel much more stable than it used to be. There are some 
-        things that are still great in the OS/2 kernel like a stable 
-        API, a working ABI and clearly separated parts which do not 
-        mess with each other. The OS/2 kernel is history nowadays, as 
-        porting to new hardware like 64bit processors is impossible to 
-        do.</para>
+        but meanwhile even Microsoft has done its job and made the 
+        Windows kernel much more stable than it used to be. There are 
+        some things that are still great in the OS/2 kernel like a 
+        stable API, a working ABI, and clearly separated parts which do 
+        not mess with each other. The OS/2 kernel is history nowadays, 
+        as porting to new hardware like 64 bit processors is impossible 
+        to do.</para>
 
       </listitem>
 
       <listitem>
 
-        <para>Even if the OS/2 API was stable and great one day no one 
+        <para>Even if the OS/2 API was stable and great one day, no one 
         will code like this anymore nowadays. PM programming will scare 
-        away every student that grew up with Java or another high-level 
-        language like C++ and (RAD) toolkits like wxWidgets, qt and 
+        away every student who grew up with Java or another high-level 
+        language like C++ and (RAD) toolkits like wxWidgets, qt, and 
         GTK2. The OS/2 PM API is definitely dead and a big 
         <emphasis>don&apos;t</emphasis> for the future. There are 
         enough alternatives which can provide what OS/2 programmers 
@@ -258,8 +258,8 @@
         <para>The OS/2 community lost way too much time in porting 
         drivers and software. Instead of focusing on real stuff like 
         WPS integration most time spent on projects is stupid and 
-        boring porting work. This did not bring us further at all, just 
-        a few things were done the OS/2 way.</para>
+        boring porting work. This did not advance us further at all, 
+        just a few things were done the OS/2 way.</para>
 
       </listitem>
 
@@ -280,34 +280,34 @@
     <title>Voyager Components</title>
 
     <para>So what are those components we talk about? While we can 
-    define some parts pretty detailed it is not that easy yet for other 
-    parts, simply because we need to do some more work first. We talked 
-    about things like the WPS, that is what about most OS/2 users would 
-    define as the <quote>OS/2 feeling</quote>. And it is actually also 
-    what we, the current developers of Voyager, appreciate most about 
-    OS/2. So it was obvious that we will start with an object model 
-    first - this is the base needed to implement a WPS like desktop. 
-    Another developer has a lot of know how in the multimedia field, so 
-    he started to work on a multimedia subsystem replacement. We will 
-    show more than those two parts but you will see that there is not 
-    much work done on that right now. The reason is simple: We do not 
-    have any developers yet for those parts. We hope that this will 
-    change soon, also because we release this book to the public. 
-    Contributions are very welcome, please see <xref /> to get an 
-    overview about how you can join the projects!</para>
+    define some parts pretty detailed it is not that easy for other 
+    parts yet, simply because we need to do some more work first. We 
+    talked about things like the WPS, that is what about most OS/2 
+    users would define as the <quote>OS/2 feeling</quote>. And, 
+    actually, it also is what we, the current developers of Voyager, 
+    appreciate most about OS/2. So it was obvious that we would start 
+    with an object model first—this is the base needed to implement a 
+    WPS-like desktop. Another developer has a lot of know-how in the 
+    multimedia field, so he started to work on a multimedia subsystem 
+    replacement. We will show more than those two parts but you will 
+    see that there is not much work done on that right now. The reason 
+    is simple: We do not have any developers yet for those parts. We 
+    hope that this will change soon, also because we release this book 
+    to the public. Contributions are very welcome, please see <xref /> 
+    to get an overview about how you can join the projects!</para>
 
     <section>
 
       <title>Voyager Object Model</title>
 
-      <para>The WPS is a fully object oriented desktop, instead of 
+      <para>The WPS is a fully object-oriented desktop, instead of 
       <emphasis>everything is a file</emphasis> the credo is 
       <emphasis>everything is an object</emphasis>. This opens a whole 
       new way of interacting with the desktop for the user, but also 
       for the developer. We will not go into the details about the 
       object model itself in this introduction, a more detailed example 
       is covered in <xref linkend="dov.vom"/>. If you don&apos;t know 
-      the WPS at all you might want to download the eComStation Demo 
+      the WPS at all, you might want to download the eComStation Demo 
       CD, which is available for free at 
       <ulink url="http://www.ecomstation.com"/>.</para>
 
@@ -329,9 +329,9 @@
       available. The development of the Voyager Object Model is done in 
       an object oriented fashion of C.</para>
 
-      <para>The development of the new Voyager Object Model is done on 
-      OS/2 so far. However, the code is very portable and should 
-      compile on other platforms as well.</para>
+      <para>The development of the new Voyager Object Model has been 
+      done on OS/2 so far. However, the code is very portable and 
+      should compile on other platforms as well.</para>
 
     </section>
 
@@ -344,8 +344,8 @@
       <firstterm>Presentation Manager</firstterm> (PM) and 
       <firstterm>GPI/GDI</firstterm> (Graphic Programming 
       Interface/Graphic Device Interface). The PM is responsible for 
-      drawing common controls, window handling, input handling and 
-      more, while GPI/GDI provides a powerful matrix based subsystem 
+      drawing common controls, window handling, input handling, and 
+      more, while GPI/GDI provides a powerful matrix-based subsystem 
       which can be used to draw about everything one might need. 
       Applications like Maul Publisher on OS/2 show how powerful the 
       subsystem actually is.</para>
@@ -354,43 +354,43 @@
       underlying GRADD architecture are available as open source. This 
       means they cannot be extended and we cannot fix known bugs in it. 
       So it was important to look for alternatives and it was clear 
-      from the beginning that we will not rewrite something as complex 
+      from the beginning that we would not rewrite something as complex 
       as GPI by ourself.</para>
 
-      <para>To find a replacement for PM was not that difficult: Almost 
+      <para>Finding a replacement for PM was not that difficult: Almost 
       all big applications or toolkits on Unix-like systems like 
-      OpenOffice.org, Mozilla, SWT and wxWidgets are based on GTK+. The 
-      second option would be the qt-toolkit which is also quite popular 
-      among developers. The problem of the qt-toolkit is its license: 
-      It is dual-licensed as GPL or a commercial license. GPL actually 
-      forces the developer to release everything under the GPL license 
-      as well, which is absolutely not the intention of Voyager. GTK+ 
-      however is licensed under the LGPL license, which does not have 
-      that strict restriction, it does not force the developer to 
-      release the source code of his application. That is for example 
-      also the reason why commercial products like Acrobat Reader on 
-      Linux are using GTK+. GTK+ is also a very modern and powerful 
-      toolkit which is well maintained. The only drawback is its quite 
-      rudimentary documentation but this is unfortunately a general 
-      problem of many open source software and toolkits 
-      available.</para>
+      OpenOffice.org, Mozilla, SWT, and wxWidgets are based on GTK+. 
+      The second option would be the qt-toolkit which is also quite 
+      popular among developers. The problem of the qt-toolkit is its 
+      license: It is dual-licensed as GPL or a commercial license. GPL 
+      actually forces the developer to release everything under the GPL 
+      license as well, which is absolutely not the intention of 
+      Voyager. GTK+ however is licensed under the LGPL license, which 
+      does not have that strict restriction and does not force the 
+      developer to release the source code of his application. That is, 
+      for instance, also the reason why commercial products like 
+      Acrobat Reader on Linux are using GTK+. GTK+ is also a very 
+      modern and powerful toolkit which is well maintained. The only 
+      drawback is its quite rudimentary documentation but unfortunately 
+      this is a general problem of the many open source software and 
+      toolkits available.</para>
 
-      <para>To find a replacement for GPI was tricky. For quite some 
+      <para>Finding a replacement for GPI was tricky. For quite some 
       time we did not know what to choose as a replacement for that. 
-      But during 2005 there was a newcomer in this area getting a lot 
+      But in 2005 there was a newcomer in this area that received a lot 
       of attention: Cairo Graphics Library ( 
       <ulink url="http://www.cairographics.org"/>). Cairo basically 
       provides everything one might ask for as GPI programmer, like 
-      FIXME. And developers start using it, the Mozilla foundation 
-      announced that the Geko rendering engine will move its rendering 
-      to Cairo, OpenOffice.org also wants to use it for its rendering 
+      FIXME. And developers start using it: The Mozilla foundation 
+      announced that the Geko rendering engine would move its rendering 
+      to Cairo, OpenOffice.org also wants to use it for its rendering, 
       and the GTK+ team moves a lot of drawing functions to Cairo as 
       well. So it looks like the perfect choice as a GPI replacement 
-      and the first feedback from OS/2 developers that know GPI well 
+      and the first feedback from OS/2 developers who know GPI well 
       seems to prove that.</para>
 
-      <para>While Cairo is already ported to OS/2 we still work on 
-      getting GTK+ to work as well. We hope to reach that point soon 
+      <para>While Cairo has already been ported to OS/2 we still work 
+      on getting GTK+ to work as well. We hope to reach that point soon 
       with the support of Everblue (Xlib-Layer for OS/2: 
       <ulink url="http://everblue.netlabs.org"/>).</para>
 
@@ -401,12 +401,12 @@
       <title>Triton</title>
 
       <para>OS/2 introduced a modern multimedia subsystem in 1994. It 
-      provided the abstraction of codecs and transports, which made it 
+      provided the abstraction of codecs and transports, which makes it 
       possible that even a media player from 1994 can play new codecs 
       like FLAC and Ogg Vorbis, simply because the system knows the 
-      codec for it. Also, it does nto matter if the stream is coming 
+      codec for it. Also, it does not matter if the stream is coming 
       from a local harddisk or if it is provided by an Internet radio 
-      station using the http protocol. Any application using this 
+      station using the HTTP protocol. Any application using this 
       interface can handle any protocol and codec supported by the 
       system, without the need to implement that for each one of them 
       separately.</para>
@@ -416,11 +416,11 @@
       Cocsis, is skilled in this area and decided to implement a 
       similar concept from scratch. This is also necessary nowadays, 
       back when MMPM in OS/2 got designed no one talked about things 
-      like HDTV, Satellite TV and DivX yet so it does have its 
-      limitations for todays requirements.</para>
+      like HDTV, Satellite TV, and DivX, so it does have its 
+      limitations for today&apos;s requirements.</para>
 
       <para>We think it is important that developers get a modern 
-      multimedia subsystem right from the beginning, like this we can 
+      multimedia subsystem right from the beginning, so we can 
       integrate the applications according to it and integrate them 
       even better into the desktop. More information about Triton can 
       be found in <xref linkend="dov.triton"/>.</para>
@@ -431,21 +431,21 @@
 
       <title>Neptune</title>
 
-      <para>On Unix-like systems the desktop is usually running inside 
-      an X-session, the most known implementation of that is called 
-      Xorg. Xorg implements Xlib and provides an interface for graphics 
-      device drivers. This interface can be binary only and the two big 
-      players nowadays, Nvidia and ATI, both provide just binary only 
+      <para>On Unix-like systems the desktop usually runs inside an 
+      X-session, the most known implementation of that is called Xorg. 
+      Xorg implements Xlib and provides an interface for graphics 
+      device drivers. This interface can be binary-only and the two big 
+      players nowadays, Nvidia and ATI, both provide just binary-only 
       drivers.</para>
 
-      <para>Desktops like KDE, Gnome and Xfce are no longer implemented 
-      on Xlib itself, instead they use high-level toolkits like GTK+ or 
-      qt. For historical reasons it seems to be impossible right now to 
-      get rid of Xlib itself, which does not make sense anymore because 
-      no (properly written) application nowadays is using Xlib for 
-      drawing. This is all done by the toolkit itself, on GTK+ for 
-      example this is now done using Cairo Library. qt is using his own 
-      rendering engine called Arthur.</para>
+      <para>Desktops like KDE, Gnome, and Xfce are no longer 
+      implemented on Xlib itself, instead they use high-level toolkits 
+      like GTK+ or qt. For historical reasons it seems to be impossible 
+      right now to get rid of Xlib itself, which does not make sense 
+      anymore because no (properly written) application nowadays is 
+      using Xlib for drawing. This is all done by the toolkit itself. 
+      On GTK+ this is now done using the Cairo Library, for instance. 
+      qt is uses its own rendering engine called Arthur.</para>
 
       <para>Unfortunately there were no successful attempts so far to 
       get rid of Xlib completely, most of the time people argue that 
@@ -453,13 +453,13 @@
       for applications that are not using any direct rendering and 
       beside this, most users never use that feature anyway. But the 
       current trend on Unix-like systems finally goes into the 
-      direction of using OpenGL accelerated backends and doing the 
+      direction of using OpenGL-accelerated backends and doing the 
       whole rendering in it. This is exactly where Neptune comes 
       in.</para>
 
       <para>Neptune will provide a window manager for both Xlib and 
       Cario, where Cairo is using the Glitz backend for OpenGL 
-      accelerated rendering. Unlike PM on OS/2 Xlib is not providing 
+      accelerated rendering. Unlike PM on OS/2, Xlib is not providing 
       any methods for window management so we need a 3rd party 
       application doing that and this is the job of so called window 
       managers.</para>
@@ -473,7 +473,7 @@
        ). The Neptune chapter in this book needs to be started 
       first.</para>
 
-      <para>Note that Neptune is not critical for Voyager, even if it 
+      <para>Note that Neptune is not critical for Voyager. Even if it 
       would be <emphasis>nice to have</emphasis>, Voyager can and will 
       run on a normal Xlib based Xorg with any window manager.</para>
 
@@ -485,23 +485,23 @@
 
       <para>Many OS/2 users adore the OS/2 kernel for various reasons. 
       It is pretty stable, it provides a stable ABI for device drivers, 
-      the multitasking is still excellent and it is fast. Most probably 
-      it will be possible to work with this kernel for another few 
-      years on recent hardware, but it will not go on like this 
+      the multitasking is still excellent, and it is fast. Most 
+      probably it will be possible to work with this kernel for another 
+      few years on recent hardware, but it will not go on like this 
       forever. Hardware and technology is changing and so do kernels. 
-      The OS/2 kernel did not get any major enhancements since around 
-      1997 so it is time to think about an alternative.</para>
+      The OS/2 kernel hasn&apos;t received any major enhancements since 
+      around 1997, so it is time to think about an alternative.</para>
 
       <para>It is absolutely clear that whatever option might come up, 
       we will <emphasis>not</emphasis> write device drivers on our own 
-      again. This was and is one of the major problems we had and no 
-      one of the core developers of Voyager wants to spend time on that 
+      again. This was and is one of the major problems we had and none 
+      of the core developers of Voyager wants to spend time on that 
       anymore.</para>
 
       <para>As you can see in <xref id="dov.kernel"/>, there are plenty 
       of options available nowadays and it would be a waste of time to 
       write yet another one by ourself. Voyager will compile on as many 
-      kernels and possible, the team will abstract everything in a way 
+      kernels as possible, the team will abstract everything in a way 
       that the kernel is just one of the decisions we take.</para>
 
       <para>We would like to get to a point where we can release 
@@ -521,12 +521,12 @@
 
     <para>Voyager is open source software. This means everything which 
     belongs to the core of Voyager is available in source code and thus 
-    everyone can have a look at the implementation and even better, 
+    everyone can have a look at the implementation and, even better, 
     improve and extend it.</para>
 
     <para>There are plenty of open source licenses available and the 
-    Voyager core team discussed for quite some time which one we should 
-    choose for Voyager. Our requirements were:</para>
+    Voyager core team has discussed which one we should choose for 
+    Voyager for quite some time. Our requirements were:</para>
 
     <itemizedlist>
 
@@ -554,7 +554,7 @@
       <listitem>
 
         <para>Because of the binary compatible object model, it must be 
-        possible to provide binary only extensions to classes and 
+        possible to provide binary-only extensions to classes and 
         objects, both open source and closed source, commercial or 
         non-commercial.</para>
 
@@ -572,7 +572,7 @@
 
     <para>This already made one thing pretty clear: The license cannot 
     be the GNU General Public License (GPL). The GPL prohibits the use 
-    of binary only components, as we can see very well in the endless 
+    of binary-only components, as we can see very well in the endless 
     discussions in the Linux kernel mailing-list. And what is a binary 
     object model for when we cannot use its advantage because of the 
     license? So we had to discuss different licenses and after some 
@@ -598,7 +598,7 @@
 
     <para>We decided to use a dual-licensing of the core to avoid 
     endless discussions with those programmers who think the GPL solves 
-    every problem, it will most probably not make everyone happy but 
+    every problem. It will most probably not make everyone happy but 
     the LGPL is the only logical way for our requirements in that case. 
     The CDDL gives more freedom to us because we as developers can also 
     sell our product like this, but if someone changes source code of 
@@ -612,10 +612,10 @@
     this.</para>
 
     <para>For sure we hope that many programmers release their classes, 
-    objects and applications as open source software. In best case 
+    objects, and applications as open source software. In best case 
     under the same license as we do. But we also think that a project 
     like Voyager can just get its full potential when we open up the 
-    market for commercial companies and programmers as well - and most 
+    market for commercial companies and programmers as well—and most 
     open source desktops nowadays do not provide that freedom.</para>
 
     <para />

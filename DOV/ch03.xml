@@ -12,22 +12,22 @@
 
       <title>Introduction</title>
 
-      <para>The desktop follows a document centered approach in 
-      contrast to other task driven implementations. This means the 
+      <para>The desktop follows a document-centered approach in 
+      contrast to other task-driven implementations. This means the 
       user is working with documents to be found on the system rather 
       then starting some kind of application and working inside of 
       that. For example to modify a text document the user just clicks 
-      the document and doesn&apos;t has to care which application is 
+      the document and doesn&apos;t have to care which application is 
       able to handle that kind of document because the system will find 
-      an appropriate one. In task driven environments the user first 
+      an appropriate one. In task-driven environments the user first 
       starts an application, for example a word processor, and opens 
-      documents from inside the application using a file chose 
+      documents from inside the application using a file selection 
       dialog.</para>
 
-      <para>All documents, files etc. the user interacts with are 
+      <para>All documents, files, etc. that the user interacts with are 
       objects because the desktop is based on an object model described 
       elsewhere in this document. This means the desktop is fully 
-      object orientated with all the benefits coming from that. So 
+      object-orientated with all the benefits coming from that. So 
       it&apos;s possible to have data encapsulated in the objects and 
       subclassing of document or file classes is not even allowed but 
       encouraged by the underlying system.</para>
@@ -39,28 +39,28 @@
       <title>Classes and Objects</title>
 
       <para>The user of the desktop is dealing with objects. Files for 
-      example are not classic files like on other systems but are real 
+      example are not classic files like on other systems but real 
       objects in the sense that they might carry additional information 
       which is encapsulated and come with object methods to work with 
       them. For example one doesn&apos;t copy a file by using a 
       filemanager or the desktop application and calling some <function>
       copy()</function> API of the operating system. Instead a method 
       on the file object is invoked and the file object handles the 
-      copying on itself.</para>
+      copying by itself.</para>
 
       <para>Every object is an instance of a class which is registered 
       with the desktop. Classes may be registered and de-registered at 
       any time (a restart of the desktop may be necessary). They are 
       implemented as shared libraries and link dynamically to the 
-      desktop. Basing the whole desktop on an object model which allows 
-      subclassing and class replacement without recompiling it&apos;s 
-      possible for independent developers to create new classes without 
-      access to the desktop source code. In fact developers are 
-      encouraged not to modify sources to extend the desktop but to 
-      create new classes to add functions to the desktop. By replacing 
-      classes with new versions overriding inherited methods it&apos;s 
-      possible to modify the behaviour of any class of the 
-      desktop.</para>
+      desktop. By basing the whole desktop on an object model which 
+      allows subclassing and class replacement without recompiling 
+      it&apos;s possible for independent developers to create new 
+      classes without access to the desktop source code. In fact 
+      developers are encouraged not to modify sources to extend the 
+      desktop but to create new classes to add functions to the 
+      desktop. By replacing classes with new versions overriding 
+      inherited methods it&apos;s possible to modify the behaviour of 
+      any class of the desktop.</para>
 
       <para>The root class of the whole desktop is 
       <classname>SOMObject</classname> which is also the root class of 
@@ -86,14 +86,14 @@
       accessing tags in the audio file containing the artists name or 
       the trackname. One may implement the latter by adding code to 
       handle ID3 tags of MP3 files and code to handle the same for OGG 
-      files. In the end <classname>MMAudio</classname> would contain 
+      files. In the end, <classname>MMAudio</classname> would contain 
       code for every tag format known. If a developer ever came up with 
-      a new audio codec and a different tag architecture the maintainer 
-      of the desktop or the <classname>MMAudio</classname> class had to 
-      be asked to add additional parsing code. Even after the code 
-      addition users can&apos;t immediately benefit from it because the 
-      next release may only be available at some point in the 
-      future.</para>
+      a new audio codec and a different tag architecture, the 
+      maintainer of the desktop or the <classname>MMAudio</classname> 
+      class had to be asked to add additional parsing code. Even after 
+      the code addition users can&apos;t immediately benefit from it 
+      because the next release may only be available at some point in 
+      the future.</para>
 
       <section id="dov.vd.g.s">
 
@@ -164,8 +164,8 @@
           <listitem>
 
             <para>Objects are shown in a list with each row containing 
-            the icon, the name and details about the object in question 
-            like filesize or creation date.</para>
+            the icon, the name, and details about the object in 
+            question like filesize or creation date.</para>
 
           </listitem>
 
@@ -192,7 +192,7 @@
       <para><emphasis>Browser View</emphasis> is not supported because 
       this kind of traversing the filesystem breaks the object metaphor 
       of the desktop. Changing the folder one is in has to also change 
-      position, size and shape of the browser window because in the 
+      position, size, and shape of the browser window because in the 
       object world the view should represent the underlying object. Not 
       taking into account the object settings confuses the user because 
       he can&apos;t rely on a consistant behaviour of folder views with 
@@ -204,7 +204,7 @@
 
       <title>Templates</title>
 
-      <para>New documents, files or other objects are created by 
+      <para>New documents, files, or other objects are created by 
       dragging an object template somewhere into the filesystem. 
       Templates normally are located in the central Templates folder 
       but may also be created in other places. Beside the system or 
@@ -214,7 +214,7 @@
 
       <note>
 
-        <para>Voyager-desktop compliant applications handling documents 
+        <para>Voyager-desktop-compliant applications handling documents 
         should create the appropriate templates for the user.</para>
 
       </note>
