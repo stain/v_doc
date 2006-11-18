@@ -62,18 +62,17 @@ netlabs.org - Open Source Software for OS/2 and eCS
 \end{frame}
 
 \begin{frame}
-\frametitle{Outline - Voyager}
-\tableofcontents[part=1,hideallsubsections]
+\frametitle{Outline}
+\tableofcontents[hideallsubsections]
 \end{frame}
 
-\part{Voyager}
 \section{History}
 
 \begin{frame}
 \begin{alertblock}{Warning}
 This is not a very technical presentation!
 
-(Please don't walk out now ;-)
+(Please don't leave the room now ;-)
 \end{alertblock}
 \end{frame}
 
@@ -141,8 +140,8 @@ Thus the idea of Voyager was born!
 \subsection{The Journey}
 \begin{frame}[allowframebreaks=0.6]
 \frametitle{The Idea}
-Wind of change
-\begin{itemize}[<+->]
+The Story so Far\ldots
+\begin{itemize}
   \item Long process of thinking about the future for several years
   \item First idea with Kernel of MacOS X in Summer 2004
   \item First presentation of that idea at Developers Workshop 2005 in Dresden
@@ -158,81 +157,124 @@ Wind of change
 \end{itemize}
 \end{frame}
 
-\subsection{The Goal}
+\begin{frame}
+\frametitle{What Voyager \textit{is not}}
+\begin{itemize}
+  \item Voyager is \textbf{not} the OS/2 and eCS killer!
+  \item netlabs.org will \textbf{not} stop development for eCS software
+  \item Voyager is not something you can use right now (yet)
+  \item It is not vapoware
+\end{itemize}
+\end{frame}
+
 \begin{frame}
 \frametitle{The Goal}
 There are many free desktop environments available, like KDE and GNOME. Our focus is different:
-\begin{itemize}
-  \item SOM like object model, binary compatible (unlike everything else out there on Unix)
-  \item provide a WPS like desktop environment (OS/2 "Feeling")
-  \item well integrated applications (drag and drop, CUA, etc)
-  \item focus on localization right from the beginning (Unicode/UTF-8)
-  \item keep unique ideas like IOProcs and reimplement them
-  \item use as much existing code/apps as possible (as long as it makes sense), don't reinvent the wheel
+\begin{itemize}[<+->]
+  \item SOM like object model, binary compatible (unlike everything else out
+  there on Unix-like systems)
+  \item Provide a WPS like desktop environment (\textit{OS/2 Feeling})
+  \item Well integrated applications (drag \& drop, CUA, etc)
+  \item Focus on localization right from the beginning (Unicode/UTF-8/16/32)
+  \item Keep unique ideas like IOProcs and reimplement them
+  \item Use as much existing code/apps as possible (as long as it makes sense),
+  don't reinvent the wheel 
+  \item Document what we do!
 \end{itemize}
 \end{frame}
 
-\subsection{The middle-term Goal}
 \begin{frame}
-\frametitle{The middle-term Goal}
-Software takes time to grow, usually  more than one thinks. So it is important
-to have a middle-term strategy as well:
-\begin{itemize}
-  \item the development of this project should be possible on many platforms, including eCS
-  \item in parallel, we should provide support for the most popular Unix-like systems at the moment
-  \item eCS developers should be motivated to use SOM for new ideas because code can be reused
-  \item users can continue to use eCS as we know it today and still get new features
-  \item in middle-term we can start a smooth migration to the new desktop
+\frametitle{Development Path}
+\begin{itemize}[<+->]
+  \item Development of Voyager should be possible on many platforms, starting on
+  eCS
+  \item Support for the most popular Unix-like systems is required
+  \item eCS developers should be motivated to use SOM for new ideas because
+  code can be partially reused
+  \item Users can continue to use eCS as we know it today and still get new features
+  \item Part-by-part replacement for smooth migration
 \end{itemize}
 \end{frame}
 
-
-\subsection{The long-term Goal}
 \begin{frame}
-\frametitle{The long-term Goal}
-While eCS is a platform that works fine nowadays we won't have any more support from IBM for new hardware, so in long-term we need something else:
-\begin{itemize}
-  \item a team of interested developers might start working on an OS/2 compatibility layer for Unix like systems
-  \item in long term we need a new kernel, that discussion is absolutely open right now
-  \item most of the OS/2 coders don't like the Linux Design so other options are preferred
-  \item if you can help out on that project, you are very welcome :)
-  \item final goal: our own distribution based on existing and new software
-  \item and finally: world domination (aka \it{Stage 3})
+\frametitle{The Vision}
+There is more to do\ldots
+\begin{itemize}[<+->]
+  \item A team of interested developers might start working on an OS/2 compatibility layer for Unix-like systems
+  \item In long term we need a new kernel (discussion is open)
+  \item Most of the OS/2 coders don't like the Linux design so other options are preferred
+  \item If you can help out on that project, you are very welcome :)
+  \item Final goal: our own distribution based on existing and new software
+  \item And finally: \textit{Phase 3} (aka \textit{World Domination\texttrademark})
 \end{itemize}
 \end{frame}
 
 \section{The Voyager Project}
-\subsection{Voyager Components}
+\subsection{Introduction}
 \begin{frame}
-\frametitle{Voyager Components}
-\begin{itemize}
-  \item Voyager Object Model
-  \item Window Manager (for Cairo and Xlib)
-  \item Cairo as GPI replacement (opinions?)
+\frametitle{The Codename}
+Why \textit{The Voyager Project}?
+\begin{itemize}[<+->]
+  \item Fits into OS/2 codenames (Star Trek)
+  \item NASA Spacecraft: Probe since 1977, longest-lasting mission of NASA,
+  visited Jupiter and Saturn and provided detailed images of them
+  \item It is really just a codename, not a definitive name for a product.
+\end{itemize}
+\end{frame}
+
+\subsection{Design of Voyager}
+\begin{frame}
+\frametitle{Voyager Components, now}
+\begin{itemize}[<+->]
+  \item Netlabs Object Model (SOM)
+  \item Voyager Desktop (WPS)
+  \item Cairo (GPI/GDI, what Peter loves ;)
+  \item GTK+ (GUI Toolkit, PM)
+  \item Triton (Multimedia Subsystem, MMPM/MMOS2)
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Voyager Components, next steps}
+\begin{itemize}[<+->]
+  \item Proper security concept
+  \item Neptune (Window Manager for Cairo and Xlib)
   \item OpenGL based Cairo backend
   \item Xorg OpenGL device drivers (no Xlib necessary in mid-term)
-  \item Xlib - see Everblue presentation
-  \item open question: Input Handling - who can help?
-  \item anything missing?
 \end{itemize}
 \end{frame}
 
-\subsection{Voyager Object Model}
+\section{Voyager Components}
+\subsection{Under Development}
+
 \begin{frame}
-\frametitle{Voyager Object Model}
-\begin{itemize}
+\frametitle{Netlabs Object Model}
+\begin{itemize}[<+->]
   \item SOM is a binary compatible object model, no need to recompile objects (unlike on GNOME for example)
-  \item there are some design documents from IBM itself (published in ACM)
-  \item there is quite some documentation available written by former IBM employees
-  \item Chris Wohlgemuth started to reimplement SOM from scratch, see Voyager Object Model presentation
-  \item drawback: not many people know SOM - but we are used to that fact as OS/2 users ;-)
+  \item There are some design documents from IBM itself (published in ACM)
+  \item There is quite some documentation available written by former IBM employees
+  \item Chris Wohlgemuth started to reimplement the concepts under the name NOM
+  \item This is the base for a WPS like desktop
+  \item Chris: Status? :-)
 \end{itemize}
 \end{frame}
 
-\subsection{Cairo}
+\begin{frame}
+\frametitle{NOM Design}
+Rather complex design ;-)
+FIXME
+\end{frame}
+
+\begin{frame}
+\frametitle{Voyager Desktop}
+\begin{itemize}[<+->]
+  \item FIXME
+\end{itemize}
+\end{frame}
+
 \begin{frame}
 \frametitle{Cairo}
-\begin{itemize}
+\begin{itemize}[<+->]
   \item modern, open source, cross-platform 2D API
   \item PDF/PS-like 2D API (hint: MacOS X Quartz)
   \item multiple output systems (screen, printer)
@@ -241,43 +283,32 @@ While eCS is a platform that works fine nowadays we won't have any more support 
 \end{itemize}
 \end{frame}
 
-\subsection{Voyager Security}
 \begin{frame}
-\frametitle{Voyager Security}
-Most desktops nowadays do have security problems, we try to do it better:
-\begin{itemize}
-  \item each developer should think about the consequences of his code in terms of security
-  \item peer-reviews of sourcecode by other developers
-  \item there are many papers available regarding security, many are already linked in the Voyager wiki
-  \item a binary object model doesn't make it easier, Apple had to learn that as well
-  \item use existing research work know how (like DOpE - http://os.inf.tu-dresden.de/dope/)
+\frametitle{GTK+ Toolkit}
+\begin{itemize}[<+->]
+  \item Most used toolkit on Unix-like systems nowadays
+  \item LGPL license (binary linking possible, unlike qt)
+  \item Abstraction layer called GLIB
+  \item Ongoing development
+  \item wxWidgets and SWT are implemented on top of it
+  \item Not yet available on eCS, PM port is evaluated right now
 \end{itemize}
 \end{frame}
 
-
-\subsection{Toolkit}
 \begin{frame}
-\frametitle{Toolkit}
-\begin{itemize}
-  \item modern toolkits are much simpler to use than PM
-  \item GTK+ or qt are the options for existing ones, main toolkit will be GTK+
-  \begin{itemize}
-    \item GTK+ is C, wrappers for all kind of languages
-    \begin{itemize}
-      \item SWT for GTK+
-      \item wxWidgets on top of GTK+
-      \item Firefox \& Thunderbird are using GTK+
-    \end{itemize}
-    \item qt is C++ only, one should support it
-  \end{itemize}
-  \item We don't need yet another toolkit \texttrademark
+\frametitle{Triton}
+The OS/2 way to abstract codecs and such stuff is quite unique
+\begin{itemize}[<+->]
+	\item FIXME
 \end{itemize}
 \end{frame}
 
-\subsection{Window Manager}
+\subsection{Next Steps}
+
 \begin{frame}
-\frametitle{Window Manager}
-\begin{itemize}
+\frametitle{Neptune Window Manager}
+A WM has to take care of
+\begin{itemize}[<+->]
   \item the open client windows
   \item the client stacking order
   \item the client to virtual desktop assignment
@@ -286,23 +317,13 @@ Most desktops nowadays do have security problems, we try to do it better:
   \item client decorations
   \item ...
 \end{itemize}
+Status: Prototype done, developer is very busy with other things. Sourcecode
+of prototype available soon.
 \end{frame}
 
-\subsection{IOProc Replacement}
 \begin{frame}
-\frametitle{IOProc Replacement}
-The OS/2 way to abstract codecs and such stuff is quite unique
-\begin{itemize}
-  \item see \it{IOProc Replacement} presentation
-\end{itemize}
-\end{frame}
-
-\section{OpenGL Backend}
-
-\subsection{Motivation}
-\begin{frame}
-\frametitle{Motivation}
-\begin{itemize}
+\frametitle{OpenGL Backend}
+\begin{itemize}[<+->]
   \item OpenGL is the standard nowadays, only MS is doing their own game mit DirectX
   \item OpenGL allows fancy stuff like blending and 3D effects, no fun on 2D Hardware
   \item powerful API
@@ -310,141 +331,126 @@ The OS/2 way to abstract codecs and such stuff is quite unique
 \end{itemize}
 \end{frame}
 
-\subsection{Options Today}
-\begin{frame}
-\frametitle{Options Today}
-\begin{itemize}
-  \item DirectX based Device Drivers - proprietary, binary only and not OpenGL
-  \item Xorg device driver backend, open source and used on most Unix platforms, supports OpenGL for new cards (ATI and Nvidia)
-  \item SNAP does not have OpenGL and we don't see that changing in the near future
-\end{itemize}
-Our choice should be Xorg Device Driver backend
-\end{frame}
-
-\subsection{Xorg OpenGL Design}
 \begin{frame}
 \frametitle{Xorg OpenGL Design}
 \begin{columns}
 \column[T]{5cm}
-%			\includegraphics[width=3cm]{ogl-backend.pdf}
+\includegraphics[width=3.5cm]{ogl-backend.pdf}
 \column{5cm}
 Simplified design of the Xorg OpenGL backend (taken from official docs), Xlib stripped out
 \end{columns}
 \end{frame}
 
-\section{OS/2 and eCS Compatiblity}
-\subsection{Some Ideas}
+\subsection{OS/2 and eCS Compatiblity}
 \begin{frame}
 \frametitle{Some Ideas}
-People do ask for binary compatibility. We see the following option:
-\begin{itemize}
-  \item use a pure VM based solution - easy and will work well, already possible
-  \item rewrite the whole OS as proposed by some people - unrealistic, waste of ressources
-  \item implement a minimal OS/2 personality on top of an existing kernel and get binary compatibility to work
+People do ask for binary compatibility. We see the following options:
+\begin{itemize}[<+->]
+  \item Use a pure VM based solution - easy and will work well, already possible
+  \item Rewrite the whole OS as proposed by some people - unrealistic, waste of ressources
+  \item Implement a minimal OS/2 personality on top of an existing kernel and get binary compatibility to work
 \end{itemize}
 \end{frame}
 
-\subsection{OS/2 OS Personality}
 \begin{frame}
 \frametitle{OS/2 OS Personality}
 To get a minimal OS/2 personality to work we would have to implement:
-\begin{itemize}
-  \item DOS*, MOU*, KBD* and VIO* API's
-  \item LX loader
+\begin{itemize}[<+->]
+  \item \texttt{DOS*}, \texttt{MOU*}, \texttt{KBD*} and \texttt{VIO*} API's
+  \item LX loader (Knuts kLoader)
   \item GRADD driver for OpenGL backend
-  \item what is missing?
+  \item Some other things
 \end{itemize}
-Some things exist, like JdeBP - unfortunately not open source
+Some things exist, like JdeBP - unfortunately not open source. Work on some
+parts started, much work left.
 \end{frame}
 
-\subsection{GRADD on OpenGL}
 \begin{frame}
 \frametitle{GRADD on OpenGL}
 \begin{columns}
 \column{3cm}
-%			\includegraphics[scale=0.3]{ogl-gradd.pdf}
+\includegraphics[scale=0.3]{ogl-gradd.pdf}
 \column{6cm}
-\begin{itemize}
+\begin{itemize}[<+->]
   \item OpenGL GRADD driver could be  used on OS/2 already, Xorg should work (with some effort)
-  \item As soon as a OS/2 personality would work, one could migrate to the new kernel
+  \item As soon as a OS/2 personality would work, one could migrate to the new
+  kernel 
+  \item This might become an important project for eCS anyway
 \end{itemize}
 \end{columns}
 \end{frame}
 
-
-
-\section{Project Management}
-\subsection{Documentation}
-\begin{frame}
-\frametitle{Documentation}
-Many developers complain about the quality of documentation of some open source projects
-\begin{itemize}
-  \item Apple provides very good API docs \& tutorials for Darwin
-  \item we must provide that as well, right from the beginning
-  \item it should be very easy for new people to get an overview of the projects
-  \item see How to organize netlabs.org Software Projects presentation
-\end{itemize}
-\end{frame}
-
-\subsection{Coding Guidelines}
-\begin{frame}
-\frametitle{Coding Guidelines}
-\begin{itemize}
-  \item CUA, see http://en.wikipedia.org/wiki/Common\_User\_Access
-  \item consistent class \& method names (see Darwin Kernel Programming Guide)
-  \item Subversion for sourcecode management
-  \item TRAC for milestones, bugs, ToDos, source browsing
-  \item see http://svn.netlabs.org/libc as an example
-  \item goal: make it easy for new developers to join the projects
-\end{itemize}
-\end{frame}
-
 \subsection{License}
+
 \begin{frame}
-\frametitle{License}
-\begin{itemize}
-  \item we do not want to use (L)GPL for our own code, APL or MPL are candidates
+\frametitle{Voyager License}
+\begin{itemize}[<+->]
+  \item we do not want to use GPL for our own code for various reasons
   \item the object model allows binary code, GPL would make that difficult
   \item we might use (L)GPLed code for parts when it makes sense to do that
-  \item goal: make the project attractive for commercial vendors right from the beginning
+  \item LGPL/CDDL dual license for Voyager core
+  \item APL for sample applications
 \end{itemize}
 \end{frame}
 
-\section{What's Next?}
-\subsection{Next Steps}
-\begin{frame}
-\frametitle{Next Steps}
-We try to attract developers at this stage already:
-\begin{itemize}
-  \item build environment on OS/2
-  \item GTK+ for OS/2 (via Everblue)
-  \item build environment on Linux
-  \item more? FreeBSD, MacOS X, Solaris etc volunteers needed :)
-  \item mailinglist for discussions
-  \item The Design of Voyager - online design document
-\end{itemize}
-http://wiki.netlabs.org/index.php/Voyager has more information!
-\end{frame}
+\section{Roadmap}
+\subsection{Work in Progress}
 
-\subsection{Timeline}
 \begin{frame}
 \frametitle{Timeline}
-\begin{itemize}
-  \item first sourcecode online in a few weeks (hopefully)
-  \item first version of the design document to be released before Q3/06
-  \item new server for netlabs.org, new CMS with dedicated Voyager pages (work in progress)
-  \item goal: provide development environments for at least two platforms before end of 2006
+\begin{itemize}[<+->]
+  \item First sourcecode is online!
+  \begin{itemize}[<+->]
+    \item Triton
+    \item Netlabs Object Model
+  \end{itemize}
+  \item First version of \textit{The Design of Voyager} got released in October 2006
+  \item New server for netlabs.org, new CMS with dedicated Voyager pages (work in progress)
+  \item Goal: provide development environments for at least two platforms ASAP
 \end{itemize}
 \end{frame}
 
-\subsection{Join the Project}
 \begin{frame}
 \frametitle{Join the Project}
-\begin{itemize}
-  \item check the Voyager Wiki and FAQ, monitor netlabs.org pages
-  \item join the Voyager Mailinglist at
-  \item join the \#netlabs IRC channel (see http://www.ecomstation.com/chat.phtml)
+\begin{itemize}[<+->]
+  \item Go to \texttt{http://voyager.netlabs.org}
+  \item Check the Voyager Wiki and FAQ
+  \item Join the Voyager Mailinglist at
+  \item join the \texttt{\#netlabs} IRC channel (see
+  \texttt{http://www.ecomstation.com/chat.phtml}) 
+  \item Contribute to \textit{The Design of Voyager}
+  \item Contribute to NOM, Triton, compatibility layer etc.
+  \item Translate as soon as first text is available
+  \item Support us with money
 \end{itemize}
 \end{frame}
+
+\begin{frame}
+\frametitle{Voyager?}
+We talked about what Voyager is not, so what is it then?
+\begin{itemize}[<+->]
+  \item It is a great motivation to go on with eCS
+  \item It is a ambizioniertes FIXME project
+  \item It is a great challenge
+  \item It will become a great piece of software
+  \item The first step to \textit{World Domination\texttrademark}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Q\&A}
+	Questions?
+\end{frame}
+
+% \begin{frame}
+% \frametitle{About this Presentation}
+% This presentation was done using the \LaTeX beamer class
+% (\texttt{http://latex-beamer.sourceforge.net}). \texttt{pdflatex} was used to
+% convert it to a PDF file.
+% 
+% \LaTeX source of the file is available in the Voyager Subversion repository at
+% \texttt{http://svn.netlabs.org/v_doc}
+% \end{frame}
 
 \end{document}

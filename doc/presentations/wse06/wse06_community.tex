@@ -1,0 +1,243 @@
+%% LaTeX Beamer presentation template (requires beamer package)
+%% see http://latex-beamer.sourceforge.net/
+%% idea contributed by H. Turgut Uyar
+%% template based on a template by Till Tantau
+%% this template is still evolving - it might differ in future releases!
+
+% netlabs.org community presentation for Warpstock Europe 2006
+% Adrian Gschwend
+
+\documentclass{beamer}
+% Handout:
+%\documentclass[handout]{beamer}
+
+\mode<presentation>
+{
+\usetheme{Warsaw}
+\setbeamercovered{transparent}
+}
+
+\usepackage{amsmath,amssymb}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+
+\beamertemplatetransparentcovereddynamic
+
+%\logo{\includegraphics[height=0.5cm]{dws06.png}}
+
+\title[netlabs.org - The Crux with the Community]
+{netlabs.org - The Crux with the Community}
+
+\subtitle
+{How Open Source Development does (not) work}
+
+\author[Adrian Gschwend]
+{Adrian~Gschwend}
+
+\institute[netlabs.org]
+{
+netlabs.org - Open Source Software for OS/2 and eCS
+}
+
+\date[17.11.2006]
+{Warpstock Europe 2006, Cologne, Germany}
+
+\subject{OS/2 and eCS development}
+\keywords{OS/2 eCS eComStation}
+
+% \AtBeginSubsection[]
+% {
+% \begin{frame}<beamer>
+% \frametitle{Overview}
+% \tableofcontents[part-1]
+% \end{frame}
+% }
+
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{Motivation}
+
+\begin{frame}
+\frametitle{Why this Presentation?}
+	\begin{itemize}[<+->]
+      \item 9 years of experience with netlabs.org
+      \item Many ups and downs 
+      \item Still just a few contributors
+      \item Successful and less successful software projects meanwhile
+      \item Big ongoing project: \textit{The Voyager Project}
+    \end{itemize}
+\end{frame}
+
+\section{The Community}
+\subsection{The Present}
+
+\begin{frame}
+\frametitle{netlabs.org Today}
+\begin{itemize}[<+->]
+  \item Core team of maybe 20-30 people
+  \item Around 130 people in the netlabs.org database
+  \item Many of them are on \texttt{\#netlabs} IRC channel during the day
+  \item Quite a lot of mailinglists, mirrored on gmane.org for newsgroup/web
+  access 
+  \item Pretty old webpages, out of date, not updated by many project leaders
+  \item TRAC projects are often missing on netlabs.org webpage
+  \item People do not know where to look
+  \item Adrian gets contacted directly by users and developers, bottleneck
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Contributions to netlabs.org}
+\begin{itemize}[<+->]
+  \item Most work is done by a few developers
+  \item Most of them have more than one project running
+  \item Just a few users contribute in a form
+  \item Some support with sponsoring units
+  \item Just very few fulltime contributors/programmers
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Community Today}
+\begin{itemize}[<+->]
+  \item Various usergroups around the world
+  \item Warpstock events around the world
+  \item OS/2 VOICE
+  \item EDM/2
+  \item SSI/Mensys \& eComStation
+  \item Most projects suffer from the same problem
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusion}
+\begin{itemize}[<+->]
+  \item The real community is very small
+  \item Quite a lot just use it
+  \item Situation could be improved
+\end{itemize}
+\end{frame}
+
+\subsection{A possible Future}
+\begin{frame}
+\frametitle{Some Ideas}
+\begin{itemize}[<+->]
+  \item Team Netlabs, like TeamOS2 and alike
+  \item Advocacy group, we-feeling
+  \item Membership and yearly contribution
+  \item Could be money or time contribution
+  \item Translate presentations, show videos etc.
+  \item Represent netlabs.org on workshops, press, fair\ldots
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{netlabs.org Website}
+\begin{itemize}[<+->]
+  \item Up to date information
+  \item New CMS, new server
+  \item TRAC fully integrated into CMS
+\end{itemize}
+\end{frame}
+
+\section{Developers}
+\begin{frame}
+\begin{itemize}[<+->]
+  \item Project tracking (TRAC/xTracker)
+  \item Subversion
+  \item Generalized build/release framework
+  \item Consistent feeling between projects
+  \item Clear structure:
+  \begin{itemize}[<+->]
+    \item TRAC for developers
+    \item netlabs.org CMS for users
+    \item bugtracking on one place
+    \item Same procedure for same things
+  \end{itemize}
+  \item Liberal license
+\end{itemize}
+\end{frame}
+
+\section{Big Business}
+\subsection{Learning from other Projects}
+
+\begin{frame}
+\frametitle{What does \textbf{not} work}
+\begin{itemize}[<+->]
+  \item Many, many open source projects
+  \item Often just proof of concept
+  \item The source is the only documentation\texttrademark
+  \item No design
+  \item Yet another\ldots
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Money\ldots}
+\begin{itemize}[<+->]
+  \item There are just a few successful OSS projects without funding
+  \item There are many which do get funded:
+  \begin{itemize}[<+->]
+    \item Mozilla
+    \item OpenOffice
+    \item Eclipse
+    \item OpenBSD
+    \item Ubuntu
+    \item Linux Kernel
+    \item \ldots
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\subsection{Conclusion}
+\begin{frame}
+\begin{itemize}[<+->]
+  \item Every single one can contribute
+  \item Every single one can contribute
+  \item Every single one can contribute
+  \item We are netlabs.org
+  \item If we act as a real community everything is possible
+  \item It is possible to be a successful niche
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Next Steps for You}
+\begin{itemize}[<+->]
+  \item Team/Usergroups: Discuss possible Team Netlabs idea
+  \item Users: Would you join such a team?
+  \item Users: Could you contribute somewhere?
+  \item Users: Are you a marketing specialist?
+  \item Developers: Can we help you?
+  \item Developers: Release management support needed?
+  \item Cool group with sexy project is looking for funding \texttrademark
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Q\&A}
+	Questions?
+\end{frame}
+
+% \begin{frame}
+% \frametitle{About this Presentation}
+% This presentation was done using the \LaTeX beamer class
+% (\texttt{http://latex-beamer.sourceforge.net}). \texttt{pdflatex} was used to
+% convert it to a PDF file.
+% 
+% \LaTeX source of the file is available in the Voyager Subversion repository at
+% \texttt{http://svn.netlabs.org/v_doc}
+% \end{frame}
+
+\end{document}
