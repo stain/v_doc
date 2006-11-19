@@ -261,14 +261,54 @@ Why \textit{The Voyager Project}?
 
 \begin{frame}
 \frametitle{NOM Design}
-Rather complex design ;-)
-FIXME
+%\begin{columns}
+%\column[T]{5cm}
+\includegraphics[width=8cm]{images/SOMClassMgrObject-layout.pdf}
+%\column{5cm}
+%Simplified design of the Xorg OpenGL backend (taken from official docs), Xlib stripped out
+%\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Netlabs Object Model}
+Things that work right now:
+\begin{itemize}[<+->]
+  \item Binding files creation (IDL compiler)
+  \item Class creation from IDL files
+  \item Subclassing
+  \item Explicit metaclasses
+  \item Method overriding
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Netlabs Object Model}
+Thinks that do not work yet:
+\begin{itemize}[<+->]
+  \item Class replacement
+  \item Dynamical loading of classes (have to be linked in atm)
+  \item \ldots
+\end{itemize}
+Difference to SOM:
+\begin{itemize}[<+->]
+  \item Use of an environment pointer in each method call (CORBA exception
+  handling)
+  \item IDL is 100\% CORBA
+  \item SOM specific IDL extensions are not supported. Implemented as macros
+  instead.
+  \item \ldots
+\end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Voyager Desktop}
 \begin{itemize}[<+->]
-  \item FIXME
+  \item WPS base classes in development now. Already some code available
+  \item Snapshot available but not for mere mortals
+  \item Subversion available but no checkin yet
+  \item Todo lists will be online soon
+  \item Right now based on Xlib (Everblue) because of GTK+
 \end{itemize}
 \end{frame}
 
@@ -292,16 +332,29 @@ FIXME
   \item Ongoing development
   \item wxWidgets and SWT are implemented on top of it
   \item Not yet available on eCS, PM port is evaluated right now
+  \item Everblue already provides some support for it
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Triton}
-The OS/2 way to abstract codecs and such stuff is quite unique
 \begin{itemize}[<+->]
-	\item FIXME
+	\item Well-defined subsystem
+	\item Core library
+	\item Easy-to-use API for the application developers to visualize and control multimedia contents
+	\item Easy-to-use API for the plugin developers to be able to extend the system with support of new multimedia formats
 \end{itemize}
 \end{frame}
+
+\begin{frame}
+\frametitle{Triton Status}
+\begin{itemize}[<+->]
+  \item First audio codec implemented: MP3 (April 2006)
+  \item First image codecs implemented: GBM module support
+  \item First video codec implemented: (can't remember which one ;)
+\end{itemize}
+\end{frame}
+
 
 \subsection{Next Steps}
 
@@ -430,7 +483,7 @@ parts started, much work left.
 We talked about what Voyager is not, so what is it then?
 \begin{itemize}[<+->]
   \item It is a great motivation to go on with eCS
-  \item It is a ambizioniertes FIXME project
+  \item It is a ambitious project
   \item It is a great challenge
   \item It will become a great piece of software
   \item The first step to \textit{World Domination\texttrademark}
