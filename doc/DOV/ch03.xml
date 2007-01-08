@@ -34,103 +34,105 @@
 
     </section>
 
-    <section id="dov.vd.g.co">
-
-      <title>Classes and Objects</title>
-
-      <para>The user of the desktop is dealing with objects. Files for 
-      example are not classic files like on other systems but real 
-      objects in the sense that they might carry additional information 
-      which is encapsulated and come with object methods to work with 
-      them. For example one doesn&apos;t copy a file by using a 
-      filemanager or the desktop application and calling some <function>
-      copy()</function> API of the operating system. Instead a method 
-      on the file object is invoked and the file object handles the 
-      copying by itself.</para>
-
-      <para>Every object is an instance of a class which is registered 
-      with the desktop. Classes may be registered and de-registered at 
-      any time (a restart of the desktop may be necessary). They are 
-      implemented as shared libraries and link dynamically to the 
-      desktop. By basing the whole desktop on an object model which 
-      allows subclassing and class replacement without recompiling 
-      it&apos;s possible for independent developers to create new 
-      classes without access to the desktop source code. In fact 
-      developers are encouraged not to modify sources to extend the 
-      desktop but to create new classes to add functions to the 
-      desktop. By replacing classes with new versions overriding 
-      inherited methods it&apos;s possible to modify the behaviour of 
-      any class of the desktop.</para>
-
-      <para>The root class of the whole desktop is 
-      <classname>SOMObject</classname> which is also the root class of 
-      the underlying object system (see picture below). 
-      <classname>WPObject</classname> implements basic desktop methods 
-      like menus or property notebooks. Derived from the basic desktop 
-      class is the filesystem class for objects representing files or 
-      folders. A subtree handles all types of folders which isn&apos;t 
-      covered here. All kinds of files live on the left part of the 
-      tree. A basic datafile class <classname>WPDataFile</classname> 
-      implements methods common to all files like querying the filesize 
-      or getting the date of creation. A subtree starting with 
-      <classname>MMAudio</classname> implements audio multimedia files 
-      while a class <classname>MMVideo</classname> handles digital 
-      video files. The <classname>WPDataFileExt</classname> class will 
-      be covered later.</para>
-
-      <para>The benefits of using such a class tree in the desktop are 
-      easily spotted. The <classname>MMAudio</classname> class 
-      implements basic features like playing audio files or displaying 
-      audio information like the playtime of the file in question using 
-      operating system features. It may also provide a method for 
-      accessing tags in the audio file containing the artists name or 
-      the trackname. One may implement the latter by adding code to 
-      handle ID3 tags of MP3 files and code to handle the same for OGG 
-      files. In the end, <classname>MMAudio</classname> would contain 
-      code for every tag format known. If a developer ever came up with 
-      a new audio codec and a different tag architecture, the 
-      maintainer of the desktop or the <classname>MMAudio</classname> 
-      class had to be asked to add additional parsing code. Even after 
-      the code addition users can&apos;t immediately benefit from it 
-      because the next release may only be available at some point in 
-      the future.</para>
-
-      <section id="dov.vd.g.s">
-
-        <title>Subclassing</title>
-
-        <para>Using derived classes said developer may just create a 
-        new class which inherits everything from 
-        <classname>MMAudio</classname> but overrides the method which 
-        deals with tag parsing to implement the new parser. Using a 
-        binary compatible object system this class can be added without 
-        recompiling the desktop. Even more the developer doesn&apos;t 
-        need the desktop sources at all and doesn&apos;t have to care 
-        about the rest of the class hierarchy or changes to 
-        <classname>MMAudio</classname> made by others (as long as the 
-        others don&apos;t break the class by changing the binary 
-        interface by purpose). Users may install the new class without 
-        changing anything of their current system and may immediately 
-        use the new features implemented by the class seamlessly. So 
-        instead of adding more and more code to 
-        <classname>MMAudio</classname> it&apos;s better to move 
-        specialized code like tag parsing to specialized classes as 
-        done in the example with <classname>MMMp3</classname> and 
-        <classname>MMOgg</classname>. This also helps to keep the 
-        source maintainable because possible execution path are clear 
-        and well contained.</para>
-
-      </section>
-
-      <section id="dov.vd.g.cr">
-
-        <title>Class Replacement</title>
-
-        <para>FIXME</para>
-
-      </section>
-
-    </section>
+	<section id="dov.vd.g.co">
+		
+		<title>Classes and Objects</title>
+		
+		<para>The user of the desktop is dealing with objects. Files for example are not
+			classic files like on other systems but real objects in the sense that they might
+			carry additional information which is encapsulated and come with object
+			methods to work with them. For example one doesn&apos;t copy a file by using a
+			filemanager or the desktop application and calling some <function>
+			copy()</function> API of the operating system. Instead a method on the file
+			object is invoked and the file object handles the copying by itself.</para>
+		
+		<para>Every object is an instance of a class which is registered with the desktop.
+			Classes may be registered and de-registered at any time (a restart of the desktop
+			may be necessary). They are implemented as shared libraries and link
+			dynamically to the desktop. By basing the whole desktop on an object model which
+			allows subclassing and class replacement without recompiling it&apos;s
+			possible for independent developers to create new classes without access to the
+			desktop source code. In fact developers are encouraged not to modify sources to
+			extend the desktop but to create new classes to add functions to the desktop. By
+			replacing classes with new versions overriding inherited methods it&apos;s
+			possible to modify the behaviour of any class of the desktop.</para>
+		
+		<para>The root class of the whole desktop is <classname>SOMObject</classname>
+			which is also the root class of the underlying object system (see picture below).
+			<classname>WPObject</classname> implements basic desktop methods like
+			menus or property notebooks. Derived from the basic desktop class is the
+			filesystem class for objects representing files or folders. A subtree handles
+			all types of folders which isn&apos;t covered here. All kinds of files live on the
+			left part of the tree. A basic datafile class
+			<classname>WPDataFile</classname> implements methods common to all files
+			like querying the filesize or getting the date of creation. A subtree starting
+			with <classname>MMAudio</classname> implements audio multimedia files
+			while a class <classname>MMVideo</classname> handles digital video files.
+			The <classname>WPDataFileExt</classname> class will be covered
+			later.</para>
+		
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/subclassing.pdf" format="PDF"/>
+			</imageobject>
+			<imageobject>
+				<imagedata fileref="images/subclassing.png" format="PNG"/>
+			</imageobject>
+			<textobject> <phrase>Subclassing</phrase>
+			</textobject>
+			<caption>
+				<para>Some blabla text for it.</para>
+			</caption> 
+		</mediaobject>
+		
+		<para>The benefits of using such a class tree in the desktop are easily spotted. The
+			<classname>MMAudio</classname> class implements basic features like
+			playing audio files or displaying audio information like the playtime of the
+			file in question using operating system features. It may also provide a method
+			for accessing tags in the audio file containing the artists name or the
+			trackname. One may implement the latter by adding code to handle ID3 tags of MP3
+			files and code to handle the same for OGG files. In the end,
+			<classname>MMAudio</classname> would contain code for every tag format
+			known. If a developer ever came up with a new audio codec and a different tag
+			architecture, the maintainer of the desktop or the
+			<classname>MMAudio</classname> class had to be asked to add additional
+			parsing code. Even after the code addition users can&apos;t immediately
+			benefit from it because the next release may only be available at some point in the
+			future.</para>
+		
+		<section id="dov.vd.g.s">
+			
+			<title>Subclassing</title>
+			
+			<para>Using derived classes said developer may just create a new class which
+				inherits everything from <classname>MMAudio</classname> but overrides
+				the method which deals with tag parsing to implement the new parser. Using a
+				binary compatible object system this class can be added without
+				recompiling the desktop. Even more the developer doesn&apos;t need the
+				desktop sources at all and doesn&apos;t have to care about the rest of the
+				class hierarchy or changes to <classname>MMAudio</classname> made by
+				others (as long as the others don&apos;t break the class by changing the
+				binary interface by purpose). Users may install the new class without
+				changing anything of their current system and may immediately use the new
+				features implemented by the class seamlessly. So instead of adding more and
+				more code to <classname>MMAudio</classname> it&apos;s better to move
+				specialized code like tag parsing to specialized classes as done in the
+				example with <classname>MMMp3</classname> and
+				<classname>MMOgg</classname>. This also helps to keep the source
+				maintainable because possible execution path are clear and well
+				contained.</para>
+			
+		</section>
+		
+		<section id="dov.vd.g.cr">
+			
+			<title>Class Replacement</title>
+			
+			<para>FIXME</para>
+			
+		</section>
+		
+	</section>
 
     <section id="dov.vd.g.fv">
 
