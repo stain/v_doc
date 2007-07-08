@@ -86,7 +86,7 @@ The Story so Far\ldots
   \item First 0.1 release of \textit{The Design of Voyager} released to the
   public for Warpstock Canada 2006
   \item Coding from various site, namely Chris Wohlgemuth on NOM
-  \item Design studies for GTK+ on OS/2 by Dmitry XXX
+  \item Design studies for GTK+ on OS/2 by Dmitry
   \item Happy Hacking in Wintercamp 2007
   \item No more progress on the DOV document because Adrian was in long holidays\ldots
   \item but, progress on the projects itself, thanks to everyone!
@@ -176,7 +176,6 @@ Things that work right now:
   \item Binding files creation (IDL compiler)
   \item Class creation from IDL files
   \item Subclassing
-  \item Explicit metaclasses
   \item Method overriding
 \end{itemize}
 \end{frame}
@@ -185,17 +184,17 @@ Things that work right now:
 \frametitle{Netlabs Object Model}
 Thinks that do not work yet:
 \begin{itemize}[<+->]
-  \item Class replacement
-  \item Dynamical loading of classes (have to be linked in atm)
+  \item Class replacement, almost done
+  \item Dynamical loading of classes, in development
   \item \ldots
 \end{itemize}
 Difference to SOM:
 \begin{itemize}[<+->]
   \item Use of an environment pointer in each method call (CORBA exception
   handling)
-  \item IDL is 100\% CORBA
-  \item SOM specific IDL extensions are not supported. Implemented as macros
-  instead.
+  \item SOM specific IDL extensions are not supported
+  \item No distributed SOM
+  \item Object pointer check
   \item \ldots
 \end{itemize}
 \end{frame}
@@ -203,12 +202,11 @@ Difference to SOM:
 \begin{frame}
 \frametitle{Voyager Desktop}
 \begin{itemize}[<+->]
-  \item WPS base classes in development now. Already some code available
-  \item Snapshot available but not for mere mortals
-  \item Subversion available but no check-in yet
-  \item Todo lists will be online soon
-  \item Right now based on Xlib (Everblue) because of GTK+
+  \item WPS classes in development now
+  \item Subversion available, code checked in
+  \item Roadmap needed, discussion open! Target: 1.0 release
 \end{itemize}
+Summary: There is quite a lot of code available for Voyager - no vaporware :-)
 \end{frame}
 
 \begin{frame}
@@ -228,10 +226,10 @@ Difference to SOM:
   \item Most used toolkit on Unix-like systems nowadays
   \item LGPL license (binary linking possible, unlike qt)
   \item Abstraction layer called GLIB
-  \item Ongoing development
+  \item Ongoing development (well, somewhat)
   \item wxWidgets and SWT are implemented on top of it
   \item Not yet available on eCS, PM port is evaluated right now
-  \item We might have to fork GTK+ sooner or later XXX
+  \item We might need to enhance it in mid-term
 \end{itemize}
 \end{frame}
 
@@ -283,51 +281,44 @@ Problem: It is far away from beeing usable.
 
 \subsection{License}
 
-\begin{frame}[allowframebreaks=0.6]
+\begin{frame}
 \frametitle{Voyager License}
 We do not want to use GPL for our own code for various reasons:
 \begin{itemize}[<+->]
-  \item our object model allows (and encourages) binary code, GPL does not allow
+  \item NOM allows (and encourages) binary code, GPL does not allow
   that (see endless Linux device driver discussion)
   \item GPL forces developers to release linked source
   \item No commercial plugins/extensions possible (see KDE, Joomla)
-  \item however, we might want to use (L)GPLed code!
+  \item However, we might want to use (L)GPLed code!
 \end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Voyager License Conclusion}
 Conclusion:
 \begin{itemize}[<+->]
   \item LGPL/CDDL dual license for Voyager core
   \item APL for sample applications (very liberal license)
 \end{itemize}
+The license discussion is thus over :-)
 \end{frame}
 
 \section{Roadmap}
 \subsection{Work in Progress}
 
-\begin{frame}[allowframebreaks=0.6]
+\begin{frame}[allowframebreaks]
 \frametitle{Timeline}
-\begin{itemize}[<+->]
-  \item First source code is online!
-  \begin{itemize}[<+->]
+\begin{itemize}
+  \item First source code is online & available in SVN. Developers only so far
+  \begin{itemize}
     \item Triton
     \item Netlabs Object Model
   \end{itemize}
-  \item First version of \textit{The Design of Voyager} got released in October 2006
-  \item New server for netlabs.org, new CMS with dedicated Voyager pages (work in progress)
-  \item Goal: provide development environments for at least two platforms ASAP
-  \item eCS: XXX
-  \item Windows: Interest of developer, minimal Windows XP ready :)
-  \item BSD/Linux: Developers wanted!
-\end{itemize}
-\end{frame}
-
-\subsection{Future}
-\begin{frame}
-\frametitle{Public Relations}
-\begin{itemize}[<+->]
-  \item We need more contributors
-  \item We need publicity
-  \item We need money
-  \item (order doesn't matter ;)
+  \item Platforms for Voyager
+  \begin{itemize}
+    \item eCS: Initial setup in SVN, no native GTK+ yet (Everblue)
+  	\item Windows: Interest of developer, minimal Windows XP ready :)
+  	\item BSD/Linux: Developers wanted!
+  \end{itemize}
 \end{itemize}
 \end{frame}
 
@@ -351,11 +342,22 @@ Conclusion:
 \frametitle{Design of Voyager}
 \begin{itemize}[<+->]
   \item Update NOM and Triton section
-  \item Kernel discussions, outcome of presentation at DWS 07?
-  \item Make it easily buildable on eCS (need contact with DocBook/2 crew)
+  \item Kernel discussions, outcome of presentation at DWS 2007?
+  \item Make it easily buildable on eCS (contact with DocBook/2 crew)
   \item Cleanup PDF generation
   \item Goal: Frequent updates!
   \item Contributions by community needed!
+\end{itemize}
+\end{frame}
+
+\subsection{Future}
+\begin{frame}
+\frametitle{Public Relations}
+\begin{itemize}[<+->]
+  \item We need more contributors
+  \item We need publicity
+  \item We need money
+  \item (order doesn't matter ;)
 \end{itemize}
 \end{frame}
 
@@ -364,7 +366,7 @@ Conclusion:
 \begin{itemize}[<+->]
   \item Future in Asia \& Eastern Europe
   \item Localisation a requirement
-  \item Clever framework needed (see presentation XXX)
+  \item Clever framework needed (see presentation of Christian Langanke)
   \item Webbased ressource management for the core
   \item Might be done with some clever DHTML coding
   \item eCS translation team got experience, use it
@@ -378,6 +380,7 @@ Conclusion:
   \item Students are easy to impress with OO desktop
   \item We need WPS showcases (Movies on Youtube \& co)
   \item Local guerilla groups (Usergroups, TeamOS/2 like)
+  \item Do presentations in your town/University\ldots
 \end{itemize}
 \end{frame}
 
@@ -403,7 +406,6 @@ Conclusion:
   \item Goal: Contributors can profit too (cash ;)
 \end{itemize}
 \end{frame}
-
 
 \begin{frame}
 \frametitle{Join the Project}
