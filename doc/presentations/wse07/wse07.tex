@@ -1,0 +1,126 @@
+%% LaTeX Beamer presentation template (requires beamer package)
+%% see http://latex-beamer.sourceforge.net/
+%% idea contributed by H. Turgut Uyar
+%% template based on a template by Till Tantau
+%% this template is still evolving - it might differ in future releases!
+
+% Voyager presentation for Warpstock Europe 2007
+% Adrian Gschwend
+
+\documentclass{beamer}
+% Handout:
+%\documentclass[handout]{beamer}
+
+\mode<presentation>
+{
+\usetheme{Warsaw}
+\setbeamercovered{transparent}
+}
+
+\usepackage{amsmath,amssymb}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+
+\beamertemplatetransparentcovereddynamic
+
+%\logo{\includegraphics[height=0.5cm]{dws06.png}}
+
+\title[netlabs.org - The Voyager Project]
+{netlabs.org - The Voyager Project}
+
+\subtitle
+{Where Are We Now?}
+
+\author[Adrian Gschwend]
+{Adrian~Gschwend}
+
+\institute[netlabs.org]
+{
+netlabs.org - Open Source Software
+}
+
+\date[3.11.2007]
+{Warpstock Europe 2007, Valkenswaard, Netherlands}
+
+\subject{OS/2 and eCS development}
+\keywords{OS/2 eCS eComStation Voyager}
+
+% \AtBeginSubsection[]
+% {
+% \begin{frame}<beamer>
+% \frametitle{Overview}
+% \tableofcontents[part-1]
+% \end{frame}
+% }
+
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{History}
+
+\subsection{The Journey}
+\begin{frame}[allowframebreaks=0.6]
+\frametitle{The Idea}
+The Story so Far\ldots
+\begin{itemize}
+  \item Long process of thinking about the future for several years
+  \item First idea with Kernel of MacOS X in Summer 2004
+  \item First presentation of that idea at Developers Workshop 2005 in Dresden
+  \item Reconsideration of this idea because it doesn't solve the main problem: Desktop
+  \item New idea with OpenGL based Desktop with well known toolkits, developed at SYSTEMS fair in Munich
+  \item Talks to various people and first presentation of that idea at
+  Warpstock Europe 2005 in Dresden
+  \item Presentation of first concept and design studies at Developers
+  Workshop 2006 in Biel, Switzerland
+  \item License decision during Summer 2006
+  \item First 0.1 release of \textit{The Design of Voyager} released to the
+  public for Warpstock Canada 2006
+  \item Coding from various site, namely Chris Wohlgemuth on NOM
+  \item Design studies for GTK+ on OS/2 by Dmitry
+  \item Happy Hacking in Wintercamp 2007
+  \item No more progress on the DOV document because Adrian was in long holidays\ldots
+  \item but, progress on the projects itself, thanks to everyone!
+\end{itemize}
+\end{frame}
+
+
+* Status
+- - NOM: Alpha/Beta Status
+- - Desktop: Proof of Concept
+- - API: Current state (Wiki, demo...)
+- - What is missing on OS/2 (GTK...)
+
+* Ideas (zeigen was wir uns so überlegt haben in den letzten Monaten)
+- - Scripting Interface
+---- wpSetup/wpQuerySetup (class methods for controlling objects)
+---- object oriented commandline (MS powershell, but better)
+-- OpenLDAP etc
+-- Unified Data access (fuse, internt protocols)
+-- Configuration Database (write kernel&driver config completely from DB, don't feed DB from config files)(hide original config files completely)
+-- Mozilla prism (successor to xulRunner) 
+
+
+* Contribute
+- - API Design (devel only)
+- - Implementation Ideas: Wiki, draw your own sketches (sample for a topic
+in the presentation)
+---- sample sketch: drag&drop of skinining objects (simple sketch !) 
+- - (Translation, eventuell zu früh)
+---- presentation of DSW2007 for Resource Management, framework for system support of several languages (systemwide/per application)
+--------- eyecatcher: killer feature: live system-wide switch for language 
+
+* Next steps
+- - Porting to other platforms
+- - Funding
+
+\end{document}
