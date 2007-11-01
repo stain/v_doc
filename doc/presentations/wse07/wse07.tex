@@ -30,7 +30,7 @@
 {netlabs.org - The Voyager Project}
 
 \subtitle
-{Where Are We Now?}
+{Objects 2.0}
 
 \author[Adrian Gschwend]
 {Adrian~Gschwend}
@@ -66,61 +66,159 @@ netlabs.org - Open Source Software
 \tableofcontents[hideallsubsections]
 \end{frame}
 
-\section{History}
+\section{Status}
 
-\subsection{The Journey}
-\begin{frame}[allowframebreaks=0.6]
-\frametitle{The Idea}
-The Story so Far\ldots
+\subsection{Components}
+
+\begin{frame}
+\frametitle{Netlabs Object Model}
 \begin{itemize}
-  \item Long process of thinking about the future for several years
-  \item First idea with Kernel of MacOS X in Summer 2004
-  \item First presentation of that idea at Developers Workshop 2005 in Dresden
-  \item Reconsideration of this idea because it doesn't solve the main problem: Desktop
-  \item New idea with OpenGL based Desktop with well known toolkits, developed at SYSTEMS fair in Munich
-  \item Talks to various people and first presentation of that idea at
-  Warpstock Europe 2005 in Dresden
-  \item Presentation of first concept and design studies at Developers
-  Workshop 2006 in Biel, Switzerland
-  \item License decision during Summer 2006
-  \item First 0.1 release of \textit{The Design of Voyager} released to the
-  public for Warpstock Canada 2006
-  \item Coding from various site, namely Chris Wohlgemuth on NOM
-  \item Design studies for GTK+ on OS/2 by Dmitry
-  \item Happy Hacking in Wintercamp 2007
-  \item No more progress on the DOV document because Adrian was in long holidays\ldots
-  \item but, progress on the projects itself, thanks to everyone!
+  \item NOM can be considered as beta
+  \item Basic things are there
+  \item XXX input Chris
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Desktop}
+\begin{itemize}
+  \item Proof of Concept
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{API Definition}
+\begin{itemize}
+  \item Wiki
+  \item Demo
 \end{itemize}
 \end{frame}
 
 
-* Status
-- - NOM: Alpha/Beta Status
-- - Desktop: Proof of Concept
-- - API: Current state (Wiki, demo...)
-- - What is missing on OS/2 (GTK...)
+\subsection{Missing Stuff}
 
-* Ideas (zeigen was wir uns so überlegt haben in den letzten Monaten)
-- - Scripting Interface
----- wpSetup/wpQuerySetup (class methods for controlling objects)
----- object oriented commandline (MS powershell, but better)
--- OpenLDAP etc
--- Unified Data access (fuse, internt protocols)
--- Configuration Database (write kernel&driver config completely from DB, don't feed DB from config files)(hide original config files completely)
--- Mozilla prism (successor to xulRunner) 
+\begin{frame}
+\frametitle{Things we need}
+\begin{itemize}
+  \item GTK+ port: Outdated, Everblue dependency
+  \item Will be done from scratch (time\ldots)
+  \item Garbage collector: Add multithreading
+\end{itemize}
+\end{frame}
+
+\section{Ideas}
+
+\begin{frame}
+\frametitle{Integration of industry standarts}
+We will not reinvent the wheel
+\begin{itemize}
+  \item OpenLDAP
+  \item Kerberos
+  \item Samba
+  \item \ldots
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Scripting Interface}
+\begin{itemize}
+  \item wpSetup/wpQuerySetup (class methods for controlling objects)
+  \item object oriented commandline (MS powershell, but better :)  
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Unified Data Access}
+\begin{itemize}
+  \item Abstract transport layers
+  \item Netdrive (eComStation)
+  \item FUSE (Unix Systems)
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Mozilla Prism}
+\begin{itemize}
+  \item XULRunner
+  \item Desktop integration of web applications
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Configuration Database}
+\begin{itemize}
+  \item write kernel \& driver config completely from DB
+  \item don't feed DB from config files
+  \item hide original config files completely   
+\end{itemize}
+\end{frame}
+
+\section{Contribute}
+
+\subsection{Users}
+
+\begin{frame}
+\frametitle{How do you want to work?}
+Tell us how you would like to do it!
+\begin{itemize}
+  \item User administration
+  \item File sharing
+  \item File access
+  \item PIM synchronisation
+  \item \ldots
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Implementation Ideas}
+\begin{itemize}
+  \item Draw your own sketches
+  \item Wiki
+  \item Demo: presentation of DSW2007 for Resource Management, framework for 
+  system support of several languages (systemwide/per application)
+  \item eyecatcher: killer feature: live system-wide switch for language
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Translation}
+\begin{itemize}
+  \item We still need a web-framework
+  \item eCS Team, input needed
+\end{itemize}
+\end{frame}
+
+\subsection{Programmers}
+
+\begin{frame}
+\frametitle{API Design}
+\begin{itemize}
+  \item Wiki
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Porting to other Platforms}
+\begin{itemize}
+  \item NOM porting howto (see TRAC)
+  \item Other components will follow
+\end{itemize}
+\end{frame}
 
 
-* Contribute
-- - API Design (devel only)
-- - Implementation Ideas: Wiki, draw your own sketches (sample for a topic
-in the presentation)
----- sample sketch: drag&drop of skinining objects (simple sketch !) 
-- - (Translation, eventuell zu früh)
----- presentation of DSW2007 for Resource Management, framework for system support of several languages (systemwide/per application)
---------- eyecatcher: killer feature: live system-wide switch for language 
+\section{Investors}
 
-* Next steps
-- - Porting to other platforms
-- - Funding
+\begin{frame}
+\frametitle{Funding}
+\begin{itemize}
+  \item No money - no Voyager
+\end{itemize}
+\end{frame}
 
 \end{document}
+
+\section{Q\&A}
+\begin{frame}
+\frametitle{Questions/Feedback}
+Any questions?
+\end{frame}
