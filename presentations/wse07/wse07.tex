@@ -7,9 +7,9 @@
 % Voyager presentation for Warpstock Europe 2007
 % Adrian Gschwend
 
-\documentclass{beamer}
+%\documentclass{beamer}
 % Handout:
-%\documentclass[handout]{beamer}
+\documentclass[handout]{beamer}
 
 \mode<presentation>
 {
@@ -72,24 +72,28 @@ netlabs.org - Open Source Software
 
 \begin{frame}
 \frametitle{Netlabs Object Model}
-\begin{itemize}
-  \item NOM can be considered as beta
-  \item Basic things are there
-  \item XXX input Chris
+\begin{itemize}[<+->]
+  \item NOM can be considered as
+  \begin{itemize}
+    \item beta, as an object model
+    \item alpha, as a complete solution 
+  \end{itemize}  
+  \item Can be used to implement first objects (see desktop)
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Desktop}
 \begin{itemize}
-  \item Proof of Concept
+  \item Work in progress
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{API Definition}
-\begin{itemize}
-  \item Wiki
+\begin{itemize}[<+->]
+  \item Wiki based design prototyping [tm]
+  \item Base categories 
   \item Demo
 \end{itemize}
 \end{frame}
@@ -99,10 +103,11 @@ netlabs.org - Open Source Software
 
 \begin{frame}
 \frametitle{Things we need}
-\begin{itemize}
+\begin{itemize}[<+->]
   \item GTK+ port: Outdated, Everblue dependency
   \item Will be done from scratch (time\ldots)
   \item Garbage collector: Add multithreading
+  \item Missing controls (missing in GTK+)
 \end{itemize}
 \end{frame}
 
@@ -111,7 +116,7 @@ netlabs.org - Open Source Software
 \begin{frame}
 \frametitle{Integration of industry standarts}
 We will not reinvent the wheel
-\begin{itemize}
+\begin{itemize}[<+->]
   \item OpenLDAP
   \item Kerberos
   \item Samba
@@ -121,15 +126,15 @@ We will not reinvent the wheel
 
 \begin{frame}
 \frametitle{Scripting Interface}
-\begin{itemize}
-  \item wpSetup/wpQuerySetup (class methods for controlling objects)
-  \item object oriented commandline (MS powershell, but better :)  
+\begin{itemize}[<+->]
+  \item Object oriented commandline (MS powershell, but better :)
+  \item wpSetup/wpQuerySetup (class methods for controlling objects)  
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Unified Data Access}
-\begin{itemize}
+\begin{itemize}[<+->]
   \item Abstract transport layers
   \item Netdrive (eComStation)
   \item FUSE (Unix Systems)
@@ -139,17 +144,16 @@ We will not reinvent the wheel
 \begin{frame}
 \frametitle{Mozilla Prism}
 \begin{itemize}
-  \item XULRunner
-  \item Desktop integration of web applications
+  \item Web based applications on the desktop
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Configuration Database}
-\begin{itemize}
-  \item write kernel \& driver config completely from DB
-  \item don't feed DB from config files
-  \item hide original config files completely   
+\begin{itemize}[<+->]
+  \item Write kernel \& driver config completely from DB
+  \item Don't feed DB from config files
+  \item Hide original config files completely
 \end{itemize}
 \end{frame}
 
@@ -160,7 +164,7 @@ We will not reinvent the wheel
 \begin{frame}
 \frametitle{How do you want to work?}
 Tell us how you would like to do it!
-\begin{itemize}
+\begin{itemize}[<+->]
   \item User administration
   \item File sharing
   \item File access
@@ -171,20 +175,17 @@ Tell us how you would like to do it!
 
 \begin{frame}
 \frametitle{Implementation Ideas}
-\begin{itemize}
+\begin{itemize}[<+->]
   \item Draw your own sketches
-  \item Wiki
-  \item Demo: presentation of DSW2007 for Resource Management, framework for 
-  system support of several languages (systemwide/per application)
-  \item eyecatcher: killer feature: live system-wide switch for language
+  \item Demo
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Translation}
-\begin{itemize}
-  \item We still need a web-framework
-  \item eCS Team, input needed
+\begin{itemize}[<+->]
+  \item We still need a web based framework
+  \item Professional know how available
 \end{itemize}
 \end{frame}
 
@@ -193,14 +194,14 @@ Tell us how you would like to do it!
 \begin{frame}
 \frametitle{API Design}
 \begin{itemize}
-  \item Wiki
+  \item As seen before (Wiki)
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Porting to other Platforms}
-\begin{itemize}
-  \item NOM porting howto (see TRAC)
+\begin{itemize}[<+->]
+  \item NOM porting HOWTO (see TRAC)
   \item Other components will follow
 \end{itemize}
 \end{frame}
@@ -210,7 +211,8 @@ Tell us how you would like to do it!
 
 \begin{frame}
 \frametitle{Funding}
-\begin{itemize}
+\begin{itemize}[<+->]
+  \item No money - no honey
   \item No money - no Voyager
 \end{itemize}
 \end{frame}
