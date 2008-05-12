@@ -1,0 +1,13 @@
+#TeXlipse project settings
+#Mon May 12 16:32:07 CEST 2008
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=dws08demo.tex
+outputFile=dws08demo.pdf
+langSpell=en
+markDer=true
+srcDir=
