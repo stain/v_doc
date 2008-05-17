@@ -1,0 +1,317 @@
+%% LaTeX Beamer presentation template (requires beamer package)
+%% see http://latex-beamer.sourceforge.net/
+%% idea contributed by H. Turgut Uyar
+%% template based on a template by Till Tantau
+%% this template is still evolving - it might differ in future releases!
+
+% ``netlabs.org 2010'' for Developers Workshop 2008
+% Adrian Gschwend
+
+\documentclass{beamer}
+% Handout:
+%\documentclass[handout]{beamer}
+
+\mode<presentation>
+{
+\usetheme{Warsaw}
+\setbeamercovered{transparent}
+}
+
+\usepackage{amsmath,amssymb}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+
+\beamertemplatetransparentcovereddynamic
+
+%\logo{\includegraphics[height=0.5cm]{dws06.png}}
+
+\title[netlabs.org - The Voyager Project]
+{netlabs.org 2010}
+
+\subtitle
+{Open Source Surival Guide}
+
+\author[Adrian Gschwend]
+{Adrian~Gschwend}
+
+\institute[netlabs.org]
+{
+netlabs.org - Open Source Software
+}
+
+\date[17.05.2008]
+{Developers Workshop 2008, Duesseldorf, Germany}
+
+\subject{OS/2 and eCS development}
+\keywords{OS/2 eCS eComStation open source netlabs.org}
+
+% \AtBeginSubsection[]
+% {
+% \begin{frame}<beamer>
+% \frametitle{Overview}
+% \tableofcontents[part-1]
+% \end{frame}
+% }
+
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{History}
+
+\subsection{The Past 10 Years}
+\begin{frame}
+\frametitle{netlabs.org Review}
+The Story so Far\ldots
+\begin{itemize}
+  \item Founded in 1997
+  \item Goal: Do free OS/2 software
+  \item First success with GIMP but developers disappeared
+  \item Some good publicity with Mozilla, no product though
+  \item Up and downs during the years, depending on everyone spare time
+  \item Some serious motivation issues around 2003
+  \item New motivation since 2005 with \textit{The Voyager Project}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Issues}
+\begin{itemize}
+  \item Development progress is ``best effort''
+  \item Same for website \& services
+  \item Coordination was often minimal or non existing
+  \item No real goal for quite some time
+  \item We lost many developers to other platforms
+  \item Just a few new people
+  \item OS/2 and eCS support gets more and more work
+  \item Other platforms make much bigger steps
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Cool Part}
+\begin{itemize}
+  \item Many people are joining us for years
+  \item Not too nerdy crowd :)
+  \item Regular real world meetings
+  \item Wintercamps
+  \item Always great knowledge exchange
+  \item 15 years of OO know how (beat this!)
+  \item Most of us are no longer ``religious''
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Services @ netlabs.org}
+\begin{itemize}
+  \item Project hosting: http, ftp
+  \item CVS
+  \item Subversion
+  \item TRAC (Bugtracking, project tracking)
+  \item Wikis
+  \item Mailing lists
+  \item Mail accounts (on request)
+\end{itemize}
+\end{frame}
+
+% irgendwas dazwischen
+\section{Web Services}
+\subsection{Features}
+
+\begin{frame}
+\frametitle{New Features}
+\begin{itemize}
+  \item User registration
+  \item User management
+  \item LDAP synchronisation for Single Sign On
+  \begin{itemize}
+    \item netlabs.org Web pages
+    \item Wiki (also EDM/2)
+    \item Subversion
+    \item TRAC
+    \item VoIP
+    \item XMPP
+  \end{itemize}
+  \item Content management of projects
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Under Construction}
+\begin{itemize}
+  \item Screenshots (on popular demand by Chris)
+  \item Blog (for netlabs.org \& per project)
+  \item News/Links will get redone
+  \item Some RSS integration from TRAC
+  \item CSS adjustments (quite a lot)
+  \item IE mode ;)
+  \item Goal: Attractive page, motivation to visit
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Quality Management}
+\begin{itemize}
+  \item Project documentation
+  \item Release management
+  \item Security (file hashes, signatures)
+  \item Quality assurance
+\end{itemize}
+\end{frame}
+
+
+\section{Communication}
+\subsection{Technologies in Use}
+
+\begin{frame}
+\frametitle{IRC Network}
+\begin{itemize}
+  \item Interactive communication
+  \item Networks (Freenode.net)
+  \item Channels (\#netlabs)
+  \item Often filtered
+  \item Some like it, some don't
+  \item Can be time consuming \& distracting
+  \item Was and is important for netlabs.org
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Mailinglists}
+\begin{itemize}
+  \item project-(user|dev)@netlabs.org
+  \item News (nntp) and web interface at gmane.org
+  \item Popular among projects
+  \item Important for teams
+  \item Archive for new contributors
+\end{itemize}
+\end{frame}
+
+\subsection{Upcoming Features}
+
+\begin{frame}
+\frametitle{XMPP/Jabber}
+\begin{itemize}
+  \item Instant Messaging Service
+  \item User to user communication
+  \item Open alternative to AIM/ICQ, MSN\ldots
+  \item username@im.netlabs.org
+  \item Status information (away, not available\ldots)
+  \item Based on http protocol, rarely filtered
+  \item Software: OpenFire
+  \item LDAP integration missing
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{VoIP}
+\begin{itemize}
+  \item SIP number per user
+  \item Can be used with hardware or software SIP phones
+  \item FRITZ!Box and others for integration into POTS/ISDN systems
+  \item Works worldwide for free
+  \item Conference rooms available (public \& protected)
+  \item Software: FreeSWITCH
+  \item LDAP integration missing, issues with NAT
+\end{itemize}
+\end{frame}
+
+\subsubsection{Person 2 Person}
+
+\begin{frame}
+\frametitle{Real World}
+\begin{itemize}
+  \item Nothing beats the Real World\texttrademark
+  \item Most productive
+  \item Most creative
+  \item Best motivation
+  \item But expensive \& time consuming
+  \item Cannot work for everyone (hi Paul!)
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Wintercamp}
+\begin{itemize}
+  \item Combine fun \& netlabs.org
+  \item Daytime sports
+  \item Nightime hacking \& talking
+  \item Great for progress
+  \item Great motivation
+  \item Team building
+  \item Summercamp might follow :-)
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Behind the Scene}
+\begin{itemize}
+  \item Core members meet more or less on a regular base
+  \item We plan to do that more often,
+  \item if it works out with Voyager at least 
+\end{itemize}
+\end{frame}
+
+\section{Organization}
+
+\begin{frame}
+\frametitle{Getting Serious}
+\begin{itemize}
+  \item netlabs.org is still a spare time project
+  \item Does not work out if we want to be successful
+  \item Some of us try to get professional the next months
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Company Status}
+\begin{itemize}
+  \item We look for alternate models (foundation \& alike)
+  \item Combine commercial software with free software
+  \item Get some serious amount of money (and we mean serious)
+  \item Hire some long time netlabs.org members
+\end{itemize}
+\end{frame}
+
+\begin{frame}[allowframebreaks=0.6]
+\frametitle{Vision}
+\begin{itemize}
+  \item Use the experience we have with OS/2 \& the Workplace Shell
+  \item Integrate new technologies
+  \item Provide something the world really needs
+  \item Be visionary
+  \item Bring some quality into the software industry
+  \item Bring computers an important step ahead
+  \item Move away from old concepts (it's soooo nineties)
+  \item Get new people into it
+%   \pause
+%   \item Get rich, famous \& reach world domination
+%   \pause
+%   \item In no particular order
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{If it doesn't Work Out
+}
+\begin{itemize}
+  \item Then the future might be not so bright anymore
+  \item Quite some of us would probably move ahead
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Q\&A}
+	Questions?
+\end{frame}
+
+\end{document}
