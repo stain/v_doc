@@ -1,0 +1,275 @@
+%% LaTeX Beamer presentation template (requires beamer package)
+%% see http://latex-beamer.sourceforge.net/
+%% idea contributed by H. Turgut Uyar
+%% template based on a template by Till Tantau
+%% this template is still evolving - it might differ in future releases!
+
+% Voyager presentation for Developers Workshop 2008
+% Adrian Gschwend
+
+\documentclass{beamer}
+% Handout:
+%\documentclass[handout]{beamer}
+
+\mode<presentation>
+{
+\usetheme{Warsaw}
+\setbeamercovered{transparent}
+}
+
+\usepackage{amsmath,amssymb}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+
+\beamertemplatetransparentcovereddynamic
+
+%\logo{\includegraphics[height=0.5cm]{dws06.png}}
+
+\title[netlabs.org - The Voyager Project]
+{netlabs.org - The Voyager Project}
+
+\subtitle
+{Status \& Next Steps}
+
+\author[Adrian Gschwend]
+{Adrian~Gschwend}
+
+\institute[netlabs.org]
+{
+netlabs.org - Open Source Software
+}
+
+\date[18.05.2008]
+{Developers Workshop 2008, Duesseldorf, Germany}
+
+\subject{OS/2 and eCS development}
+\keywords{OS/2 eCS eComStation Voyager}
+
+% \AtBeginSubsection[]
+% {
+% \begin{frame}<beamer>
+% \frametitle{Overview}
+% \tableofcontents[part-1]
+% \end{frame}
+% }
+
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{History}
+
+\subsection{The Journey}
+\begin{frame}[allowframebreaks=0.6]
+\frametitle{The Idea}
+The Story so Far\ldots
+\begin{itemize}
+  \item Long process of thinking about the future for several years
+  \item First idea with Kernel of MacOS X in Summer 2004
+  \item First presentation of that idea at Developers Workshop 2005 in Dresden
+  \item Reconsideration of this idea because it doesn't solve the main problem: Desktop
+  \item New idea with OpenGL based Desktop with well known toolkits, developed at SYSTEMS fair in Munich
+  \item Talks to various people and first presentation of that idea at
+  Warpstock Europe 2005 in Dresden
+  \item Presentation of first concept and design studies at Developers
+  Workshop 2006 in Biel, Switzerland
+  \item License decision during Summer 2006
+  \item First 0.1 release of \textit{The Design of Voyager} released to the
+  public for Warpstock Canada 2006
+  \item Coding from various site, namely Chris Wohlgemuth on NOM
+  \item Design studies for GTK+ on OS/2 by Dmitry
+  \item Happy Hacking in Wintercamp 2007
+  \item Preparation for Warpstock Europe 2007
+  \item And then\ldots 
+\end{itemize}
+\end{frame}
+
+\subsection{Uhm\ldots}
+\begin{frame}
+\frametitle{Along comes\ldots}
+Daniela, and some more friends around us:
+\begin{itemize}
+  \item Why concepts from the nineties?
+  \item Why a desktop concept based on mouse \& keyboard?
+  \item What about the fancy new interfaces coming up (multitouch \& friends)?
+  \item Why do I have to care about where I keep my information?
+  \item Why do current desktops suck?
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{She Got a Point There\texttrademark}
+That triggered some great discussions:
+\begin{itemize}
+  \item Why do we have to define how something gets represented?
+  \item What would be an ideal world for handling our information?
+  \item Is a mobile device also a platform for Voyager?
+  \item Why implement old concepts?
+  \item Who needs another desktop anyway?
+\end{itemize}
+
+\end{frame}
+
+\subsection{The Outcome}
+\begin{frame}
+\frametitle{Later On}
+Based on a SOM based core:
+\begin{itemize}
+  \item Workplace/Shell separation
+  \item Semantic information on object level
+  \item Binary compatibility
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusions}
+\begin{itemize}[<+->]
+  \item A full blown Workplace is a nice goal
+  \item but we need to start different
+  \item Guerrilla tactics
+  \item People won't care about NOM
+  \item They care about what they get
+  \item and about how they can work with it
+  \item Divide and conquer 
+\end{itemize}
+\end{frame}
+
+\section{Some Code, Anyone?}
+\subsection{NOM}
+
+\begin{frame}
+\frametitle{Netlabs Object Model}
+\begin{itemize}
+  \item SOM is a binary compatible object model, no need to recompile objects (unlike on GNOME for example)
+  \item There are some design documents from IBM itself (published in ACM)
+  \item There is quite some documentation available written by former IBM employees
+  \item Chris Wohlgemuth started to re-implement the concepts under the name NOM
+  \item This is the technical base for our ideas
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Netlabs Object Model}
+Things that work right now:
+\begin{itemize}
+  \item Binding files creation (IDL compiler)
+  \item Class creation from IDL files
+  \item Subclassing
+  \item Method overriding
+  \item Compiles on:
+  \begin{itemize}
+    \item eComStation
+    \item MacOS X
+    \item Linux
+    \item Windows
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Netlabs Object Model}
+Thinks that do not work yet:
+\begin{itemize}
+  \item Class replacement, almost done
+  \item Dynamical loading of classes, in development
+  \item \ldots
+\end{itemize}
+Difference to SOM:
+\begin{itemize}
+  \item Use of an environment pointer in each method call (CORBA exception
+  handling)
+  \item SOM specific IDL extensions are not supported
+  \item No distributed SOM
+  \item Object pointer check
+  \item \ldots
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Netlabs Object Model}
+Things that will be implemented:
+\begin{itemize}
+  \item Signals and slots
+  \item Getters/setters (properties)
+\end{itemize}
+\end{frame}
+
+\subsection{Next Steps}
+\begin{frame}
+\frametitle{NOM}
+\begin{itemize}
+  \item Fix garbage collection on most platforms
+  \item Code cleanup \& testing
+  \item Build system improvements
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Workplace/Shell Separation}
+\begin{itemize}
+  \item First implementation
+  \item Probably some RAD solution to start with
+  \item Proof of the concept
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Webpages}
+\begin{itemize}
+  \item Some serious good looking page
+  \item Information for developers
+  \item Information for potential investors
+  \item Information for users
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Developers}
+\begin{itemize}
+  \item Integration into development environments:
+  \begin{itemize}
+    \item Eclipse
+    \item XCode
+    \item VisualStudio
+  \end{itemize}
+  \item Walkthroughs for coders 
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Users}
+\begin{itemize}
+  \item Binary releases
+  \item Basic features
+  \item Integration into the supported platforms
+\end{itemize}
+\end{frame}
+
+\section{Join Us}
+\begin{frame}
+\frametitle{Join the Project}
+\begin{itemize}
+  \item Go to \texttt{http://voyager.netlabs.org}
+  \item Check the Voyager Wiki and FAQ (needs some major updates)
+  \item Join the Voyager Mailinglist
+  \item Join the \texttt{\#netlabs} IRC channel on irc.freenode.net
+  \item Contribute to NOM, class implementation, prototypes
+  \item Bring up cool ideas
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Q\&A}
+	Questions?
+\end{frame}
+
+\end{document}
