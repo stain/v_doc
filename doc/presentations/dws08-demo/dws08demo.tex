@@ -26,9 +26,9 @@
 \usepackage[T1]{fontenc}
 
 
-\title{We tell you what you already know !}
+\title{We tell you what you already would know !}
 
-\subtitle{finding meaning in the gigs of data}
+\subtitle{finding meaning,value and utility in the gigs of data}
 
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
@@ -37,11 +37,10 @@
 
 % - Use the \inst command only if there are several affiliations.
 % - Keep it simple, no one is interested in your street address.
-%\institute[netlabs.og]
-%{
-%\inst{1}%
-%Bart van Leeuwen
-%}
+\institute[netlabs.org]
+{
+ netlabs.org
+}
 
 \date{Developer Workshop 2008}
 
@@ -63,11 +62,11 @@
 
 % Delete this, if you do not want the table of contents to pop up at
 % the beginning of each subsection:
-\AtBeginSubsection[]
+\AtBeginSection[]
 {
 \begin{frame}<beamer>
 \frametitle{Outline}
-\tableofcontents[currentsection,currentsubsection]
+\tableofcontents[currentsection]
 \end{frame}
 }
 
@@ -91,22 +90,16 @@
 
 \section{Introduction}
 
-\subsection[Defenitions]{Defenitions}
+\subsection[Definitions]{Definitions}
 
 \begin{frame}
-\frametitle{Defenitions}
-
-\begin{itemize}
-  \item Data
-  \begin{itemize}
-  	\item data is anything in a form suitable for use with a computer
-  \end{itemize}
-  \item Information
-  \begin{itemize}
-  	\item A collection of data which possesses some degree of utility,
-  	value or meaning
-  \end{itemize}
-\end{itemize}
+\frametitle{Definitions}
+\begin{definition}[Data]
+Anything in a form suitable for use with a computer
+\end{definition}
+\begin{definition}[Information]
+A collection of data which possesses some degree of utility, meaning or value
+\end{definition}
 \end{frame}
 
 \subsection[Current state]{The information paradox}
@@ -142,20 +135,20 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{The 3 degrees of infomation}
+\frametitle{The 3 degrees of information}
 
 \begin{itemize}
   \item Value
   \begin{itemize}
-    \item Does the information you stored stil have some value
+    \item Does the information you stored still have some value?
   \end{itemize}
   \item Meaning
   \begin{itemize}
-    \item Can you tell from the file what it means to you
+    \item Can you tell from the file what it means to you?
   \end{itemize}
   \item Utility
   \begin{itemize}
-    \item What is the use of the information stored
+    \item What is the use of the information stored?
   \end{itemize}
 \end{itemize}
 
@@ -165,45 +158,166 @@
 \frametitle{The paradox}
 
 \begin{itemize}
-  \item after asking your self these questions
+  \item After asking yourself these questions
   \begin{itemize}
     \item The amount of information stored is huge
-    \item meaning, value and utility can only be evaluated by looking at the
+    \item Meaning, value and utility can only be evaluated by looking at the
     information again
   \end{itemize}
   \item Conclusion
   \begin{itemize}
-    \item The vast amount of information, renders it unstructured.
-    \item To much information is data
+    \item The vast amount of information, renders it unstructured
+    \item Too much ``information'' is data
   \end{itemize}
   
 \end{itemize}
 
 \end{frame}
 
-\section{Solutions}
+\section{How to get a grip}
 
 \subsection[Describing your information]{Describing your information}
 
 \begin{frame}
-\frametitle{Describing your information}
+\frametitle{Application view}
 
 \begin{itemize}
   \item Look beyond the initial context of your applications 
   \begin{itemize}
-    \item Think about storing, and describing contextual information.
+    \item Think about storing, and describing contextual information
     \item Investigate open standards for describing information
     \begin{itemize}
       \item Dublin core     
     \end{itemize} 
-    \item Search for openstandards on accessing this information
+    \item Use open standards for accessing this information
     \begin{itemize}
-      \item WSDL
+      \item WSDL ( Web Service Description Language)
     \end{itemize}
-    \item Don't take posibilities into account  
+    \item Keep away from possible solutions  
   \end{itemize}
 \end{itemize}
 
+\end{frame}
+
+\begin{frame}
+\frametitle{User view}
+
+\begin{itemize}
+  \item Attach the contextual information to your documents 
+  \begin{itemize}
+    \item On digital photographs
+    \begin{itemize}
+      \item Where is it
+      \item Who is on there     
+    \end{itemize} 
+    \item On documents
+    \begin{itemize}
+      \item What event is the document related to
+      \item Who are the reviewers
+    \end{itemize}
+  \end{itemize}
+  \item Keep away from possible solutions
+\end{itemize}
+
+\end{frame}
+\subsection[Using contextual information]{Using contextual information}
+
+\begin{frame}
+\frametitle{Using contextual information}
+
+\begin{itemize}
+  \item Define services which are attached to certain contextual data
+  \begin{itemize}
+    \item Looking up locations with Google
+  	\item Storing events in your agenda
+  	\item Searching keywords on the web
+  	\item Storing locations on your navigation tool
+	\end{itemize}
+  \item Enterprise adaptation
+  \begin{itemize}
+  	\item Use web service meta data
+  	\item Leverage contextual information added by employees to enrich company
+  	knowledge base
+\end{itemize} 
+\end{itemize}
+\end{frame}
+
+\subsection[Deja Vu]{Deja Vu}
+
+\begin{frame}
+\frametitle{Is this really new ?}
+
+\begin{itemize}
+  \item Extended Attributes
+  \begin{itemize}
+  	\item Keywords
+  	\item Application specific attributes
+  \end{itemize}
+  \item Web based utilities
+  \begin{itemize}
+    \item iGoogle
+    \item Operator 
+   \end{itemize} 
+\end{itemize}
+\end{frame}
+
+\section{Join the voyage}
+
+\subsection[Departure]{Departure}
+
+\begin{frame}
+\frametitle{What is happening now}
+
+\begin{itemize}
+  \item Current solutions
+  \begin{itemize}
+  	\item Web based information or local computer based information
+  	\item Don't take moving data into account
+   	\item Focused on finding data, not information 
+  	\item Context is missing on results
+  \end{itemize}
+  \item	Almost no crossover between web and desktop
+  \end{itemize}
+\end{frame}
+
+\subsection[Crossing the border]{Crossing the border}
+
+\begin{frame}
+\frametitle{Where do we want to go}
+
+\begin{itemize}
+  \item Using the web to find additional information on your local documents
+  \item Generate information for local use based on web pages you use
+  \item Find relations between data stored on your system
+  \item Share contextual information through the enterprise
+  \item Find new relations in existing enterprise data
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{What are the directions}
+
+\begin{itemize}
+  \item Proof of concept
+  \begin{itemize}
+  	\item NOM Based
+  	\item Contextual cross boundary information collection
+  \end{itemize} 
+  \item Guerrilla tactics
+  \begin{itemize}
+  	\item WPS Class replacements
+  	\item Windows Shell Extensions
+  	\item Gnome Panels 
+  \end{itemize} 
+\end{itemize}
+\end{frame}
+
+\subsection[Roundup]{Roundup}
+
+\begin{frame}
+\frametitle{Roundup}
+
+Questions or Remarks ??? 
 \end{frame}
 
 \end{document}
