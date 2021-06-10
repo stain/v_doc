@@ -1,7 +1,5 @@
 # v_doc
 
-# v_triton
-
 This repository is a snapshot of [Netlab's Voyager Documentation](http://trac.netlabs.org/v_doc) and is **no longer maintained**.
 
 You may also need:
